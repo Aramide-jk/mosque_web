@@ -362,7 +362,7 @@ img {
 #container .quickDonateWrapper .quickDonate h1 {
   margin-bottom: 1rem;
 }
-#container .quickDonateWrapper .quickDonate .donateBtns{
+#container .quickDonateWrapper .quickDonate .donateBtns {
   background-color: yellow;
   padding: 1rem;
 }
@@ -400,5 +400,5 @@ img {
 #container .quickDonateWrapper .donateBtn {
   color: green;
   background-color: pink;
-  bottom: ;
+  bottom:;
 }
