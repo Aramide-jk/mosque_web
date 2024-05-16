@@ -228,6 +228,7 @@ img {
   background-size: cover;
   position: relative;
   color: black;
+  position: relative;
   transition: background-image 1s ease-in-out;
 }
 
@@ -290,12 +291,20 @@ p {
 }
 
 #container .updatesWrapper .latestNews {
-  height: 10rem;
-  width: 100%;
   background-color: red;
 }
 #container .updatesWrapper .latestUpdates {
-  height: 10rem;
-  width: 100%;
   background-color: green;
+}
+
+.updateBanner {
+   margin-top: 1rem;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: black;
+  position: relative;
+  background-image: url(../img-src/pexels-konevi-2830460.jpg);
 }
