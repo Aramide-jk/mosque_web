@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 
+/* Utility */
 body {
   font-family: "Times New Roman", Times, serif;
-  line-height: 1.9;
+  line-height: 1.3;
   color: #444;
   font-weight: 500;
   background-color: white;
@@ -16,6 +17,14 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+p {
+  font-size: 1.2rem;
 }
 
 /* section1 */
@@ -233,13 +242,13 @@ img {
 }
 
 .slide1 {
-  background-image: url(../img-src/pexels-konevi-2830460.jpg);
+  background-image: url(./img-src/pexels-konevi-2830460.jpg);
 }
 .slide2 {
-  background-image: url(../img-src/pexels-mloky96-36704.jpg);
+  background-image: url(./img-src/pexels-mloky96-36704.jpg);
 }
 .slide3 {
-  background-image: url(../img-src/pexels-thirdman-8489273.jpg);
+  background-image: url(./img-src/pexels-thirdman-8489273.jpg);
 }
 
 .overlay {
@@ -254,7 +263,7 @@ img {
   font-size: 3em;
 }
 
-p {
+.slideshow-container .slide .overlay p {
   font-size: 1.5em;
 }
 
@@ -276,35 +285,120 @@ p {
   text-align: center;
 }
 
-/* .slideshow {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-} */
-
 /* Updates */
 #container .updatesWrapper {
-  grid-template-columns: repeat(2, 1fr);
-  place-items: center;
-  margin: 2rem 6rem;
+  display: flex;
+  gap: 3rem;
+  margin: 2rem 10rem;
+}
+#container .updatesWrapper h1 {
+  color: black;
 }
 
 #container .updatesWrapper .latestNews {
-  background-color: red;
+  flex: 5;
+  width: 100%;
+  height: 100%;
+}
+#container .updatesWrapper .latestNews .banner p {
+  margin: 2rem 2rem 3rem 2rem;
+  font-size: medium;
 }
 #container .updatesWrapper .latestUpdates {
-  background-color: green;
+  flex: 4;
+  width: 100%;
+  height: 100%;
+}
+#container .updatesWrapper .latestUpdates p {
+  font-size: 1.4rem;
+}
+.latestNewsBanner {
+  height: 40vh;
+  background-image: url(./img-src/nurse.jpg);
 }
 
-.updateBanner {
-   margin-top: 1rem;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#container .updatesWrapper .latestNews .latestNewsBanner a:hover {
+  text-decoration: underline;
+}
+
+/* quranJournal */
+#container .updatesWrapper .latestNews .quranJournalWrapper {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+#container .updatesWrapper .latestNews .quranJournalWrapper .quranJournal {
+  height: 8rem;
+  width: 100%;
+}
+
+#container .updatesWrapper .latestNews .quranJournalWrapper .allahMercy {
+  width: 100%;
+  height: 8rem;
+}
+
+#container .updatesWrapper .latestNews .quranJournalWrapper .allahMercy a p,
+.quranJournal p {
+  margin-top: 1rem;
+  color: red;
+}
+
+/* Quick Updates */
+#container .quickDonateWrapper {
+  display: flex;
+  background-image: url(/img-src/pexels-konevi-2830460.jpg);
+  position: absolute;
+  height: 100vh;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+#container .quickDonateWrapper .quickDonate {
+  margin: 6rem 0 0 8rem;
+  flex: 3;
+}
+
+#container .quickDonateWrapper .quickDonate h1 {
+  margin-bottom: 1rem;
+}
+#container .quickDonateWrapper .quickDonate .donateBtns{
+  background-color: yellow;
+  padding: 1rem;
+}
+
+#container .quickDonateWrapper .quickDonate .donateBtns .donateAmountBtn {
+  padding: 0.9rem 1.2rem;
+  border-radius: 5px;
+  border: 1px solid red;
+  background: whitesmoke;
+  margin: 3rem 1rem 1rem 0;
+  cursor: pointer;
+}
+#container .quickDonateWrapper .quickDonate .donateBtns .donateAmountBtn:hover {
+  border: none;
+}
+
+#container .quickDonateWrapper .quickDonate .donateBtns .other {
+  display: flex;
+  background-color: red;
+  position: absolute;
+  padding: 1rem 2rem;
+}
+#container .quickDonateWrapper .quickDonate .donateBtns .other .input {
   position: relative;
-  color: black;
-  position: relative;
-  background-image: url(../img-src/pexels-konevi-2830460.jpg);
+  width: 5rem;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+#container .quickDonateWrapper .quickDonateImage {
+  margin: 6rem 8rem 0 2rem;
+  flex: 5;
+}
+
+#container .quickDonateWrapper .donateBtn {
+  color: green;
+  background-color: pink;
+  bottom: ;
 }
