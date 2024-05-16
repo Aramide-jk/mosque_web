@@ -45,6 +45,9 @@
 //     console.error("Error:", error);
 //   });
 
+// /////////////////////////////////////////////////////
+// new Splide(".splide").mount(window.splide.Extensions);
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -55,7 +58,6 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slide");
@@ -74,4 +76,21 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+}
+
+// autos slide
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 3 seconds
 }

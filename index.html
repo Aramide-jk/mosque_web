@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Al-ibadah</title>
-    <link rel="stylesheet" href="../fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.1.1-web/css/all.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide-core.min.css">
+    <script defer src="app.js"></script>
+    <!-- <script src="./splide-4.1.3/dist/js/splide.min.js "></script> -->
   </head>
   <body>
     <div id="container">
+      <!-- section1 -->
       <div class="grid header">
         <div class="logo">
           <img src="../img-src/logo.jpg" height="100px" width="100px" alt="" />
@@ -25,25 +28,33 @@
             <div class="border"></div>
           </div>
           <div class="grid socialMedia">
-            <div class="inputs"><input type="text" class="input" placeholder="Search" />
-              <a href="#"><i class="searchIcon fa-solid fa-magnifying-glass "></i></a>
+            <div class="inputs">
+              <input type="text" class="input" placeholder="Search" />
+              <a href="#"
+                ><i class="searchIcon fa-solid fa-magnifying-glass"></i
+              ></a>
             </div>
-           <a href="#" class="donate">Donate</a>
+            <a href="#" class="donate">Donate</a>
             <div class="grid medias">
-                <div><a href="#"><i class="fa-brands fa-instagram "></i></a></div>
-                <div><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
-                <div><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
+              <div>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <div>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+              <div>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="navs">
-        <ul class="nav">
-          <li><a href="#">Support Us</a>
-           
-          </li>
-          <li><a href="#">News</a>
-           <ul class="dropDown">
+        <ul class="grid nav">
+          <li><a href="#">Support Us</a></li>
+          <li>
+            <a href="#">News</a>
+            <ul class="dropDown">
               <li><a href="#">NEWS</a></li>
               <li><a href="#">ABOUT ISLAM</a></li>
               <li><a href="#">FROM THE IMAM'S DESK</a></li>
@@ -56,21 +67,84 @@
           <li><a href="#">about Us</a></li>
         </ul>
       </div>
-    </div>
 
+      <!-- section2 -->
+       <div class="slideshow-container ">
+        <div class="slide fade slide1 banner">
+          <div class="overlay">
+            <h1>Your amazing support in Ramadan 2024</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              et?
+            </p>
+            <button class="readMore">Read more</button>
+          </div>
+        </div>
+        <div class="slide fade slide2 banner">
+          <div class="overlay">
+            <h1>Help us complete the prayer halls</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              et?
+            </p>
+            <button class="readMore">Read more</button>
+          </div>
+        </div>
+        <div class="slide fade slide3 banner">
+          <div class="overlay">
+            <h1>Hajj seminar</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              et?
+            </p>
+            <button class="readMore">Read more</button>
+          </div>
+        </div>
 
-
-
-
-
-
-    <div class="background-image">
-      <div class="overlay">
-        <h1>Your Text Here</h1>
-        <p>Additional text or description can go here.</p>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-    </div>
+      <br />
+
+      
+      <!-- <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>  -->
+ 
+
+      <!-- <section class="splide" aria-label="Splide Basic HTML Example">
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">Slide 01</li>
+			<li class="splide__slide">Slide 02</li>
+			<li class="splide__slide">Slide 03</li>
+		</ul>
+  </div>
+</section> -->
+
+      <!-- Section3 -->
+      <div class="grid updatesWrapper">
+        <div class="latestNews">
+          <h1>Latest News & Feautures</h1>
+
+        </div>
+        <div class="latestUpdates">
+          <h1>Updates</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, obcaecati!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, obcaecati!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, obcaecati!</p>
+        </div>
+      </div>
+
+      </div>
+      
 
    
+<!-- <script>
+  new Splide( '.splide' ).mount();
+</script> -->
   </body>
 </html>
