@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-#container .navs .nav li a::after {
+/* #container .navs .nav li a::after {
     content: "";
     display: block;
     height: 2px;
@@ -13,4 +13,6 @@
     transform-origin: right;
     transform: scale(0, 1);
     transition: transform ease-in-out 0.5s;
-  }
+  } */
+
+  
