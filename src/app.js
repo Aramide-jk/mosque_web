@@ -1,72 +1,67 @@
 
-      
-// Dyas selection
-const optionContainer = document.getElementById("option-container");
-for (let i = 1; i <= 28; i++) {
-  const option = document.createElement("option");
-  option.value = i;
-  option.text = ` ${i}th`;
-  optionContainer.appendChild(option);
-}
 
-// country
-// Get the select element
-const countrySelect = document.getElementById("country-select");
-
-// Fetch the list of countries from the REST Countries API
-fetch("https://restcountries.com/v3.1/all")
-  .then((response) => response.json())
-  .then((countries) => {
-    // Loop through the countries and create an option element for each country
-    countries.forEach((country) => {
-      const option = document.createElement("option");
-      option.value = country.name.common;
-      option.text = country.name.common;
-      countrySelect.add(option);
-    });
-  })
-  .catch((error) => {
-    console.error("Error fetching countries:", error);
-  });
-
-// keeping intouch
-function togglePhoneInput(radioButton) {
-  const phoneInputContainer = document.getElementById(
-    "phone-input-container",
-  );
-
-  if (radioButton.value === "yes") {
-    phoneInputContainer.classList.remove("hidden");
-  } else {
-    phoneInputContainer.classList.add("hidden");
-  }
-}
 
 
 // ////////////////////////////////////////////////
-const one_of=document.getElementById("one");
-const regular=document.getElementById("regular");
-const donation=document.getElementById("preffered_date");
-const payment=document.getElementById("payment_method","hidden");
-// const profile=getElementById("your_profile");
-const address=document.getElementById("your_address");
+
 const scroll_to_top=document.querySelector(".scroll_to_top");
 // const map=document.getElementById("map");
+const menuBtn = document.querySelector("#menu_btn");
+const navbar = document.querySelector(".navs");
 
 
 
-one_of.addEventListener("click",()=>{
-  donation.classList.add("hidden")
-  payment.style.display="grid";
-  address.classList.add("hidden")
 
-})
+/////////////////////////menu
+menuBtn.addEventListener("click", () => {
+  navbar.classList.toggle("hidden");
+});
 
-regular.addEventListener("click",()=>{
-  donation.classList.remove("hidden")
-  payment.style.display="none"
-  // address.classList.remove("hidden")
-  address.classList.remove("hidden")
+///////////////Calendar////////////
+// Replace with your actual API endpoint and key
+const calendar=document.getElementById("calendar")
+// const apiUrl = 'https://api.example.com/v1/calendar';
+// const apiKey = 'your_api_key';
 
-})
+// // Function to format the date
+// function formatDate(dateString) {
+//   const date = new Date(dateString);
+//   return date.toLocaleDateString();
+// }
 
+// // Function to display the calendar
+// function displayCalendar(data) {
+//   const calendarDiv = document.getElementById('calendar');
+//   calendarDiv.innerHTML = '';
+
+//   data.forEach(day => {
+//     const dayDiv = document.createElement('div');
+//     dayDiv.classList.add('day');
+
+//     const dateDiv = document.createElement('div');
+//     dateDiv.classList.add('date');
+//     dateDiv.textContent = formatDate(day.date);
+
+//     const eventDiv = document.createElement('div');
+//     eventDiv.classList.add('event');
+//     eventDiv.textContent = day.event;
+
+//     dayDiv.appendChild(dateDiv);
+//     dayDiv.appendChild(eventDiv);
+//     calendarDiv.appendChild(dayDiv);
+//   });
+// }
+
+// // Fetch the Islamic calendar data
+// fetch(apiUrl, {
+//   headers: {
+//     'Authorization': `Bearer ${apiKey}`
+//   }
+// })
+// .then(response => response.json())
+// .then(data => {
+//   displayCalendar(data);
+// })
+// .catch(error => {
+//   console.error('Error:', error);
+// });

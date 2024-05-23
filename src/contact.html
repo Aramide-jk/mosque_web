@@ -17,11 +17,11 @@
   <script defer src="./contact.js"></script>
 
 </head>
-<body>
+<body class="gray-50">
 
      <!-- Header -->
-     <div class="header grid grid-cols-[5fr,2.5fr] auto-rows-auto mx-32">
-        <div class="logo flex items-center">
+     <div class="header  grid grid-cols-[1fr] sm:grid-cols-[2fr,1.5fr]  lg:grid-cols-[5fr,2.5fr] auto-rows-auto mx-3 lg:mx-32">
+        <div class="logo flex items-center  my-3 lg:items-center ">
           <a href="home.html">
             <!-- <img src="../img-src/logo.jpg" height="100px" width="100px" alt="" /> -->
             <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque
@@ -29,53 +29,54 @@
     
         </div>
   
-        <div class="rightHeader ">
+        <div class="rightHeader mt-3 mx-3">
           <div class="calendar">
-            <div>
+            <div class="flex sm:block">
               <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Full Timetable &</a><br />
               <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Calendar</a>
             </div>
-            <div class="border w-full my-3"></div>
+            <div class="border w-full my-3">Calendar API</div>
           </div>
-          <div class="socialMedia flex gap-2">
+          <div class="socialMedia flex gap-2 ">
             <div class="inputs relative">
               <input type="text" class="input border px-1 py-1 rounded-md focus:border-red-900 outline-none"
                 placeholder="Search" />
               <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                  class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500"></i></a>
+                  class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500 "></i></a>
             </div>
             <!-- <a href="../src/pages/donate/index.html"
               class="donateBtn bg-red-950 px-4 pt-1 text-white rounded-md hover:bg-red-900 transition-all duration-500">Donate</a> -->
-            <div class="medias flex gap-2  text-white">
+            <div class="medias flex gap-2 mb-5  text-white ">
               <div>
                 <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                    class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-900 transition-all duration-500"></i></a>
+                    class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-700 transition-all duration-500"></i></a>
               </div>
               <div>
                 <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                    class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-900 transition-all duration-500"></i></a>
+                    class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
               </div>
               <div>
                 <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                    class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-900 transition-all duration-500"></i></a>
+                    class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
               </div>
+              <div id="menu_btn"><i class="fa-solid fa-bars  bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500 block cursor-pointer sm:hidden"></i></div>
             </div>
           </div>
         </div>
       </div>
   
       <!-- Navbar -->
-      <div class="navs pb-6">
+      <div class="navs pb-6 hidden sm:block z-10 absolute w-full">
         <ul
-          class="nav flex items-center justify-center uppercase text-center gap-5 mt-5"
+          class="nav flex flex-col items-center justify-center uppercase text-center gap-1 sm:gap-5  sm:flex-row gap-y- relative bg-slate-50 bg-opacity-70 z-10 p-4"
         >
-          <li class="relative group">
+          <li class="relative group hover:text-red-500">
             <a
-              href="#"
+              href="current_appeal.html"
               class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
               >Support Us</a
             >
-            <ul
+            <!-- <ul
               class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4 transition-all duration-500"
             >
               <li>
@@ -92,9 +93,9 @@
                   >How Use Your Donations</a
                 >
               </li>
-            </ul>
+            </ul> -->
           </li>
-          <li class="relative group">
+          <li class="relative group hover:text-red-500">
             <a
               href="#"
               class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
@@ -133,7 +134,7 @@
               </li>
             </ul> -->
           </li>
-          <li>
+          <li class="hover:text-red-500">
             <a
               href="#"
               class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
@@ -141,21 +142,21 @@
             >
           </li>
           <!-- <li><a href="#">Audio and video</a></li> -->
-          <li>
+          <li class="hover:text-red-500">
             <a
               href="about_us.html"
               class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
               >about Us</a
             >
           </li>
-          <li>
+          <li class="hover:text-red-500">
             <a
               href="donate.html"
               class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
               >Donate</a
             >
           </li>
-          <li>
+          <li class="hover:text-red-500">
             <a
               href="contact.html"
               class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
@@ -165,14 +166,14 @@
         </ul>
       </div>
     
-      <div class="bg-[url('/img-src/pexels-mloky96-36704.jpg')] bg-cover bg-center h-[26rem] w-full">
-        <div class="overlay"><h1 class="text-[5rem] font-semibold text-white relative top-56 ml-40">Contact-Us</h1>
-            <p class="text-white relative top-56 ml-40 text-xl">Help today because tomorrow you may be the one who needs more helping!
+      <div class="bg-[url('/img-src/pexels-mloky96-36704.jpg')] bg-cover bg-center h-[15rem]  sm:h-[26rem] w-full mt-[3.5rem]">
+        <div class="overlay"><h1 class="text-[1rem] sm:text-[2rem] md:text-[3xl] md:ml-20 font-semibold text-white relative ml-10 top-36 sm:top-56 ">Contact-Us</h1>
+            <p class="text-white relative top-40 sm:top-56 md:ml-20 md:top-60 ml-10 sm:ml-40 text-l sm:text-xl">Help today because tomorrow you may be the one who needs more helping!
             </p>
         </div>
       </div>
     
-      <div class="mx-6 lg:mx-32 mt-[8rem]">
+      <div class="mx-6 lg:mx-32 mt-[3rem]">
         <div class="address media grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-3 h-40 xs:hidden">
             <div class="bg-gray-100 shadow-inner shadow-gray-300 h-full w-full rounded-md">
                 <div class="content ml-14 my-5">
@@ -213,10 +214,10 @@
            
         </div>
 
-        <div id="map" class="bg-gray-100 shadow-inner shadow-gray-300 w-full h-[20rem] my-20 rounded-md p-5"></div>
+        <div id="map" class="bg-gray-100 shadow-inner shadow-gray-300 w-full h-[20rem] my-20 rounded-md p-5 md:mt-[13rem] mt-[23rem]"></div>
 
 
-        <div  class="bg-gray-100 shadow-inner shadow-gray-300 h-full w-full rounded-md p-10">
+        <div  class="bg-gray-100 shadow-inner shadow-gray-300 h-full w-full rounded-md p-10 -mt-[2rem]">
             <form action="">
                 <h1 class="text-2xl font-semibold">Write To Us</h1>
                 <label for="name" class="">
@@ -236,7 +237,7 @@
       </div>
 
        <!-- Footer -->
-    <div class="footer flex flex-col gap-4 justify-center items-center my-10">
+    <div class="footer flex flex-col gap-4 justify-center items-center my-10 mx-5">
         <div class="">
           <ul class="flex gap-5">
             <li><a href="contact" class="text-xl hover:border-b-2 border-red-800">Contact Us</a></li>
@@ -245,10 +246,13 @@
             <li><a href="login.htm"class="text-xl hover:border-b-2 border-red-800">Login</a></li>
           </ul>
         </div>
-        <p> The East London Mosque Trust is a charity (1122613) and a company limited by guarantee (468317) registered in England & Wales.</p>
+        <p class="text-center"> The East London Mosque Trust is a charity (1122613) and a company limited by guarantee (468317) registered in England & Wales.</p>
       
         
       </div>
+   
+
+
     
 </body>
 </html>

@@ -12,7 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/src/output.css" />
-    <script defer src="/src/app.js"></script>
+    <script defer src="complete_payment.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -213,30 +213,30 @@
               type="number"
               id="cardN"
               name="card_number"
-              value="card_number"
+              value=""
               placeholder="1234 1234 1234 1234"
               maxlength="16"
               class="p-2 border w-full mt-3 border-y-1 focus:border-red-800 outline-none"
             />
           </label>
-          <label for="cardN" class="flex flex-col mb-6"
+          <label for="expD" class="flex flex-col mb-6"
             >Expiry Date
             <input
               type="number"
-              id="cardN"
-              name="card_number"
-              value="card_number"
+              id="expD"
+              name="expiry_date"
+              value=""
               placeholder="D/MM/Y"
               class="p-2 border w-full mt-3 border-y-1 focus:border-red-800 outline-none"
             />
           </label>
-          <label for="cardN" class="flex flex-col mb-6"
+          <label for="sc" class="flex flex-col mb-6"
             >Security Code
             <input
               type="number"
-              id="cardN"
-              name="card_number"
-              value="card_number"
+              id="sc"
+              name="security_code"
+              value=""
               placeholder="CVC"
               maxlength="3"
               class="p-2 border w-full mt-3 border-y-1 focus:border-red-800 outline-none"

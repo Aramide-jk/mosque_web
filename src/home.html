@@ -14,179 +14,185 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-  <script defer src="./app.js"></script>
+  <script defer src="app.js"></script>
 
 </head>
 
 <body class="bg-gray-50">
   <div class=" mt-5">
-    <!-- Header -->
-    <div class="header grid grid-cols-[5fr,2.5fr] auto-rows-auto mx-32">
-      <div class="logo flex items-center">
-        <a href="home.html">
-          <!-- <img src="../img-src/logo.jpg" height="100px" width="100px" alt="" /> -->
-          <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque
-        </a>
+     <!-- Header -->
+     <div class="header  grid grid-cols-[1fr] sm:grid-cols-[2fr,1.5fr]  lg:grid-cols-[5fr,2.5fr] auto-rows-auto mx-3 lg:mx-32">
+        <div class="logo flex items-center  my-3 lg:items-center ">
+          <a href="home.html">
+            <!-- <img src="../img-src/logo.jpg" height="100px" width="100px" alt="" /> -->
+            <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque
+          </a>
+    
+        </div>
   
-      </div>
-
-      <div class="rightHeader ">
-        <div class="calendar">
-          <div>
-            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Full Timetable &</a><br />
-            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Calendar</a>
+        <div class="rightHeader mt-3 mx-3">
+          <div class="calendar">
+            <div class="flex sm:block">
+              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Full Timetable &</a><br />
+              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Calendar</a>
+            </div>
+            <div class="border w-full my-3">Calendar API</div>
           </div>
-          <div class="border w-full my-3"></div>
+          <div class="socialMedia flex gap-2 ">
+            <div class="inputs relative">
+              <input type="text" class="input border px-1 py-1 rounded-md focus:border-red-900 outline-none"
+                placeholder="Search" />
+              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                  class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500 "></i></a>
+            </div>
+            <!-- <a href="../src/pages/donate/index.html"
+              class="donateBtn bg-red-950 px-4 pt-1 text-white rounded-md hover:bg-red-900 transition-all duration-500">Donate</a> -->
+            <div class="medias flex gap-2 mb-5  text-white ">
+              <div>
+                <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                    class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-700 transition-all duration-500"></i></a>
+              </div>
+              <div>
+                <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                    class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
+              </div>
+              <div>
+                <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                    class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
+              </div>
+              <div id="menu_btn"><i class="fa-solid fa-bars  bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500 block cursor-pointer sm:hidden"></i></div>
+            </div>
+          </div>
         </div>
-        <div class="socialMedia flex gap-2">
-          <div class="inputs relative">
-            <input type="text" class="input border px-1 py-1 rounded-md focus:border-red-900 outline-none"
-              placeholder="Search" />
-            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500"></i></a>
-          </div>
-          <!-- <a href="../src/pages/donate/index.html"
-            class="donateBtn bg-red-950 px-4 pt-1 text-white rounded-md hover:bg-red-900 transition-all duration-500">Donate</a> -->
-          <div class="medias flex gap-2  text-white">
-            <div>
-              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                  class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-900 transition-all duration-500"></i></a>
-            </div>
-            <div>
-              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                  class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-900 transition-all duration-500"></i></a>
-            </div>
-            <div>
-              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                  class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-900 transition-all duration-500"></i></a>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-
-    <!-- Navbar -->
-    <div class="navs pb-6">
-      <ul
-        class="nav flex items-center justify-center uppercase text-center gap-5 mt-5"
-      >
-        <li class="relative group">
-          <a
-            href="#"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-            >Support Us</a
-          >
-          <ul
-            class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4 transition-all duration-500"
-          >
-            <li>
-              <a
-                href="current_appeal.html"
-                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                >Current Appeals</a
-              >
-            </li>
-            <li>
-              <a
-                href="donation_usage"
-                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                >How Use Your Donations</a
-              >
-            </li>
-          </ul>
-        </li>
-        <li class="relative group">
-          <a
-            href="#"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-            >News</a
-          >
-          <!-- <ul
-            class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4"
-          >
-            <li>
-              <a
-                href="#"
-                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                >NEWS</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                >ABOUT ISLAM</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                >FROM THE IMAM'S DESK</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                >LEADERSHIP IN THE COMMUNITY</a
-              >
-            </li>
-          </ul> -->
-        </li>
-        <li>
-          <a
-            href="#"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-            >Events</a
-          >
-        </li>
-        <!-- <li><a href="#">Audio and video</a></li> -->
-        <li>
-          <a
-            href="about_us.html"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-            >about Us</a
-          >
-        </li>
-        <li>
-          <a
-            href="donate.html"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-            >Donate</a
-          >
-        </li>
-        <li>
-          <a
-            href="contact.html"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-            >Contact Us</a
-          >
-        </li>
-      </ul>
-    </div>
+  
+      <!-- Navbar -->
+      <div class="navs pb-6 hidden sm:block z-10 absolute w-full">
+        <ul
+          class="nav flex flex-col items-center justify-center uppercase text-center gap-1 sm:gap-5  sm:flex-row gap-y- relative bg-slate-50 bg-opacity-70 z-10 p-4"
+        >
+          <li class="relative group hover:text-red-500">
+            <a
+              href="current_appeal.html"
+              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+              >Support Us</a
+            >
+            <!-- <ul
+              class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4 transition-all duration-500"
+            >
+              <li>
+                <a
+                  href="current_appeal.html"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >Current Appeals</a
+                >
+              </li>
+              <li>
+                <a
+                  href="donation_usage"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >How Use Your Donations</a
+                >
+              </li>
+            </ul> -->
+          </li>
+          <li class="relative group hover:text-red-500">
+            <a
+              href="#"
+              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+              >News</a
+            >
+            <!-- <ul
+              class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >NEWS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >ABOUT ISLAM</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >FROM THE IMAM'S DESK</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >LEADERSHIP IN THE COMMUNITY</a
+                >
+              </li>
+            </ul> -->
+          </li>
+          <li class="hover:text-red-500">
+            <a
+              href="#"
+              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+              >Events</a
+            >
+          </li>
+          <!-- <li><a href="#">Audio and video</a></li> -->
+          <li class="hover:text-red-500">
+            <a
+              href="about_us.html"
+              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+              >about Us</a
+            >
+          </li>
+          <li class="hover:text-red-500">
+            <a
+              href="donate.html"
+              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+              >Donate</a
+            >
+          </li>
+          <li class="hover:text-red-500">
+            <a
+              href="contact.html"
+              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    
+     
+    
 
     <!-- Slider -->
     <section class="banner">
       <section class="splide" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
           <ul class="splide__list">
-            <li class="splide__slide h-[70vh] w-full">
+            <li class="splide__slide h-[50vh] sm:h-[70vh] w-full">
               <div class="bg-[url('../img-src/pexels-pixabay-161276.jpg')] h-full bg-cover bg-center">
-                <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 text-white">
-                  <h1 class="font-bold text-4xl mb-4">Your amazing support in Ramadan 2024</h1>
-                  <p>
+                <div class="absolute top-[8rem] left-[15rem] sm:top-2/4 sm:left-2/4 -translate-x-2/4 -translate-y-2/4 text-white">
+                  <h1 class="font-bold text-lg  sm:text-4xl  sm:mb-4">Your amazing support in Ramadan 2024</h1>
+                  <div class="w-full relative  bg-red-950 text-white">
+                    <p class="text-sm ">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
                     et?
                   </p>
                   <button class="readMore">Read more</button>
+                  </div>
                 </div>
               </div>
             </li>
             <li class="splide__slide">
               <div class="bg-[url('../img-src/pexels-konevi-2830460.jpg')] h-full bg-cover bg-center">
                 <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 text-white">
-                  <h1 class="font-bold text-4xl mb-4">Your amazing support in Ramadan 2024</h1>
+                  <h1 class="font-bold text-lg  sm:text-4xl  sm:mb-4">Your amazing support in Ramadan 2024</h1>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
                     et?
@@ -197,7 +203,7 @@
             <li class="splide__slide">
               <div class="bg-[url('../img-src/pexels-thirdman-8489273.jpg')] h-full bg-cover bg-center">
                 <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 text-white">
-                  <h1 class="font-bold text-4xl mb-4">Your amazing support in Ramadan 2024</h1>
+                  <h1 class="font-bold text-lg  sm:text-4xl  sm:mb-4">Your amazing support in Ramadan 2024</h1>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
                     et?
@@ -211,19 +217,19 @@
     </section>
 
     <!-- News -->
-    <div class="grid updatesWrapper grid-cols-[7fr,5fr] gap-10 my-12 pb-12 mx-40">
+    <div class="grid updatesWrapper grid-cols-[1fr] mt-10 sm:grid-cols-[7fr,5fr]  md:mx-40 sm:mx-10 gap-2 sm:gap-10 sm:my-10 md:gap-7 md:my-12 pb-12 mx-5 ">
       <div class="grid latestNews self-stretch  justify-cente">
-        <h1 class=" text-4xl font-bold mb-4">Latest News & Feautures</h1>
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Latest News & Feautures</h1>
         <div
           class="latestNewsBanner bg-[url('../img-src/istockphoto-1404962407-1024x1024.jpg')] h-[30vh] bg-cover bg-center  flex items-center p-6">
           <div class="flex flex-col justify-center text-white">
 
 
             <a href="#">
-              <h1 class="font-bold text-2xl mb-3">Healthcare proffesionals and Religious Leaders Unite at ELM’s ‘Dying
+              <h1 class="font-bold  sm:text-xl text-lg sm:mb-3">Healthcare proffesionals and Religious Leaders Unite at ELM’s ‘Dying
                 Matters’ Conference</h1>
             </a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, vitae. Consequatur sequi commodi minima
+            <p class="text-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, vitae. Consequatur sequi commodi minima
               labore nihil ipsum ipsa ex voluptates.</p>
           </div>
         </div>
@@ -232,16 +238,17 @@
           <div class="quranJournal">
             <a href="#">
               <img src="/img-src/pexels-aqtai-2233399.jpg" class="h-36 w-full">
-              <p>Qur’an Journaling for Revert Sisters</p>
+              <p class="text-lg">Qur’an Journaling for Revert Sisters</p>
             </a>
           </div>
           <div class="allahMercy">
             <a href="#">
               <img src="/img-src/pexels-pixabay-161276.jpg" class="h-36 w-full">
-              <p>Despair Not, Allah Has Pledged to Grant Victory to Our Brothers and Sisters in Palestine</p>
+              <p class="text-lg">Despair Not, Allah Has Pledged to Grant Victory to Our Brothers and Sisters in Palestine</p>
             </a>
           </div>
         </div>
+        <div class="border my-5 sm:my-5 "></div>
 
       </div>
       <div class="grid latestUpdates self-start ">
