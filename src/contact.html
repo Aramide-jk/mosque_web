@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="output.css" />
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+
+
+  <script defer src="./contact.js"></script>
+
+</head>
+<body>
+
+     <!-- Header -->
+     <div class="header grid grid-cols-[5fr,2.5fr] auto-rows-auto mx-32">
+        <div class="logo flex items-center">
+          <a href="home.html">
+            <!-- <img src="../img-src/logo.jpg" height="100px" width="100px" alt="" /> -->
+            <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque
+          </a>
+    
+        </div>
+  
+        <div class="rightHeader ">
+          <div class="calendar">
+            <div>
+              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Full Timetable &</a><br />
+              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Calendar</a>
+            </div>
+            <div class="border w-full my-3"></div>
+          </div>
+          <div class="socialMedia flex gap-2">
+            <div class="inputs relative">
+              <input type="text" class="input border px-1 py-1 rounded-md focus:border-red-900 outline-none"
+                placeholder="Search" />
+              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                  class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500"></i></a>
+            </div>
+            <!-- <a href="../src/pages/donate/index.html"
+              class="donateBtn bg-red-950 px-4 pt-1 text-white rounded-md hover:bg-red-900 transition-all duration-500">Donate</a> -->
+            <div class="medias flex gap-2  text-white">
+              <div>
+                <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                    class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-900 transition-all duration-500"></i></a>
+              </div>
+              <div>
+                <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                    class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-900 transition-all duration-500"></i></a>
+              </div>
+              <div>
+                <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                    class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-900 transition-all duration-500"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Navbar -->
+      <div class="navs pb-6">
+        <ul
+          class="nav flex items-center justify-center uppercase text-center gap-5 mt-5"
+        >
+          <li class="relative group">
+            <a
+              href="#"
+              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+              >Support Us</a
+            >
+            <ul
+              class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4 transition-all duration-500"
+            >
+              <li>
+                <a
+                  href="current_appeal.html"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >Current Appeals</a
+                >
+              </li>
+              <li>
+                <a
+                  href="donation_usage"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >How Use Your Donations</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="relative group">
+            <a
+              href="#"
+              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+              >News</a
+            >
+            <!-- <ul
+              class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >NEWS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >ABOUT ISLAM</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >FROM THE IMAM'S DESK</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >LEADERSHIP IN THE COMMUNITY</a
+                >
+              </li>
+            </ul> -->
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+              >Events</a
+            >
+          </li>
+          <!-- <li><a href="#">Audio and video</a></li> -->
+          <li>
+            <a
+              href="about_us.html"
+              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+              >about Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="donate.html"
+              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+              >Donate</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    
+      <div class="bg-[url('/img-src/pexels-mloky96-36704.jpg')] bg-cover bg-center h-[26rem] w-full">
+        <div class="overlay"><h1 class="text-[5rem] font-semibold text-white relative top-56 ml-40">Contact-Us</h1>
+            <p class="text-white relative top-56 ml-40 text-xl">Help today because tomorrow you may be the one who needs more helping!
+            </p>
+        </div>
+      </div>
+    
+      <div class="mx-6 lg:mx-32 mt-[8rem]">
+        <div class="address media grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-3 h-40 xs:hidden">
+            <div class="bg-gray-100 shadow-inner shadow-gray-300 h-full w-full rounded-md">
+                <div class="content ml-14 my-5">
+                    <h1 class="font-semibold text-3xl my-5 ">Lagos Mosqu</h1>
+                <p class="text-lg">121 King Street,<br>
+                    al-slam 1200,<br>
+                    Nigeria</p>
+            </div>
+                </div>
+           
+            <div class="bg-gray-100 shadow-inner shadow-gray-300 h-full w-full rounded-md">
+                <div class="content ml-14 my-5">
+                    <h1 class="font-semibold text-3xl my-5 ">Contact</h1>
+                <p class="text-lg">+123 123 123 1214,<br>
+                    +123 123 123 1214,</p>
+            </div>
+                </div>
+           
+            <div class="bg-gray-100 shadow-inner shadow-gray-300 h-full w-full rounded-md">
+                <div class="content ml-14 my-5">
+                    <h1 class="font-semibold text-3xl my-5 ">Socials</h1>
+                    <div class="medias flex gap-4  text-white">
+                        <div>
+                          <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                              class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-900 transition-all duration-500"></i></a>
+                        </div>
+                        <div>
+                          <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                              class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-900 transition-all duration-500"></i></a>
+                        </div>
+                        <div>
+                          <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                              class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-900 transition-all duration-500"></i></a>
+                        </div>
+                      </div>
+            </div>
+                </div>
+           
+        </div>
+
+        <div id="map" class="bg-gray-100 shadow-inner shadow-gray-300 w-full h-[20rem] my-20 rounded-md p-5"></div>
+
+
+        <div  class="bg-gray-100 shadow-inner shadow-gray-300 h-full w-full rounded-md p-10">
+            <form action="">
+                <h1 class="text-2xl font-semibold">Write To Us</h1>
+                <label for="name" class="">
+                    <input type="text" name="name" id="name" value="" placeholder = "Your name" class="p-2 border outline-none focus:border-red-900 w-full my-5 rounded-md">
+                </label>
+                <label for="email" class="">
+                    <input type="email" name="email" id="email" value="" placeholder="Your email" class="p-2 border outline-none focus:border-red-900 w-full rounded-md">
+                </label>
+                <label for="message">
+                <textarea name="message" id="message" placeholder="Enter Your Description Here..." class="p-2 border outline-none focus:border-red-900 w-full mt-5 h-[15rem] rounded-md"></textarea>
+
+                </label>
+                <button class="message_btn bg-red-950 py-3 px-7 text-white hover:bg-red-700 transition duration-500 rounded mt-5">Send Now</button>
+            </form>
+        </div>
+
+      </div>
+
+       <!-- Footer -->
+    <div class="footer flex flex-col gap-4 justify-center items-center my-10">
+        <div class="">
+          <ul class="flex gap-5">
+            <li><a href="contact" class="text-xl hover:border-b-2 border-red-800">Contact Us</a></li>
+            <li><a href="terms&condition.html" class="text-xl hover:border-b-2 border-red-800">Terms & Condition</a></li>
+            <li><a href="pravacy.html" class="text-xl hover:border-b-2 border-red-800">Privacy & policy</a></li>
+            <li><a href="login.htm"class="text-xl hover:border-b-2 border-red-800">Login</a></li>
+          </ul>
+        </div>
+        <p> The East London Mosque Trust is a charity (1122613) and a company limited by guarantee (468317) registered in England & Wales.</p>
+      
+        
+      </div>
+    
+</body>
+</html>

@@ -15,61 +15,46 @@
     <script defer src="/src/app.js"></script>
   </head>
   <body class="bg-gray-50">
+
     <!-- Header -->
-    <div class="header grid grid-cols-[5fr,2.5fr] auto-rows-auto">
+    <div class="header grid grid-cols-[5fr,2.5fr] auto-rows-auto mx-32">
       <div class="logo flex items-center">
         <a href="/src/index.html">
-          <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque</p></a
-        >
+          <!-- <img src="../img-src/logo.jpg" height="100px" width="100px" alt="" /> -->
+          <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque
+        </a>
+        </a>
       </div>
 
-      <div class="rightHeader">
+      <div class="rightHeader ">
         <div class="calendar">
           <div>
-            <a href="#">Full Timetable &</a><br />
-            <a href="#">Calendar</a>
+            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Full Timetable &</a><br />
+            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Calendar</a>
           </div>
           <div class="border w-full my-3"></div>
         </div>
         <div class="socialMedia flex gap-2">
           <div class="inputs relative">
-            <input
-              type="text"
-              class="input border px-1 py-1 rounded-md focus:border-red-900 outline-none"
-              placeholder="Search"
-            />
-            <a href="#"
-              ><i
-                class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500"
-              ></i
-            ></a>
+            <input type="text" class="input border px-1 py-1 rounded-md focus:border-red-900 outline-none"
+              placeholder="Search" />
+            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500"></i></a>
           </div>
-          <a
-            href="index.html"
-            class="donateBtn bg-red-950 px-4 pt-1 text-white rounded-md hover:bg-red-900 transition-all duration-500"
-            >Donate</a
-          >
-          <div class="medias flex gap-2 text-white">
+          <!-- <a href="../src/pages/donate/index.html"
+            class="donateBtn bg-red-950 px-4 pt-1 text-white rounded-md hover:bg-red-900 transition-all duration-500">Donate</a> -->
+          <div class="medias flex gap-2  text-white">
             <div>
-              <a href="#"
-                ><i
-                  class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-900 transition-all duration-500"
-                ></i
-              ></a>
+              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                  class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-900 transition-all duration-500"></i></a>
             </div>
             <div>
-              <a href="#"
-                ><i
-                  class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-900 transition-all duration-500"
-                ></i
-              ></a>
+              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                  class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-900 transition-all duration-500"></i></a>
             </div>
             <div>
-              <a href="#"
-                ><i
-                  class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-900 transition-all duration-500"
-                ></i
-              ></a>
+              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                  class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-900 transition-all duration-500"></i></a>
             </div>
           </div>
         </div>
@@ -81,56 +66,143 @@
       <ul
         class="nav flex items-center justify-center uppercase text-center gap-5 mt-5"
       >
-        <li><a href="#">Support Us</a></li>
         <li class="relative group">
-          <a href="#">News</a>
-          <ul
-            class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-200 absolute -left-3/4 w-[200px] z-10 p-4"
+          <a
+            href="#"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+            >Support Us</a
           >
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">ABOUT ISLAM</a></li>
-            <li><a href="#">FROM THE IMAM'S DESK</a></li>
-            <li><a href="#">LEADERSHIP IN THE COMMUNITY</a></li>
+          <ul
+            class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4 transition-all duration-500"
+          >
+            <li>
+              <a
+                href="/src/pages/support_us/current_appeal/index.html"
+                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                >Current Appeals</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                >How Use Your Donations</a
+              >
+            </li>
           </ul>
         </li>
-        <li><a href="#">What's on & Venue hire</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Audio and video</a></li>
-        <li><a href="#">about Us</a></li>
+        <li class="relative group">
+          <a
+            href="#"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+            >News</a
+          >
+          <ul
+            class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4"
+          >
+            <li>
+              <a
+                href="#"
+                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                >NEWS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                >ABOUT ISLAM</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                >FROM THE IMAM'S DESK</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                >LEADERSHIP IN THE COMMUNITY</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+            >Events</a
+          >
+        </li>
+        <!-- <li><a href="#">Audio and video</a></li> -->
+        <li>
+          <a
+            href="#"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+            >about Us</a
+          >
+        </li>
+        <li>
+          <a
+            href="/src/pages/donate/index.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+            >Donate</a
+          >
+        </li>
       </ul>
     </div>
-    <div class="my-8 w-1/2 mx-auto">
-      <h1>Make a donation now</h1>
-      <p>
+
+    <div class="my-8 w-7/12 mx-auto">
+      <h1 class="font-semibold text-5xl">Make a donation now</h1>
+      <p class="text-lg my-10">
         Your contribution will help us to maintain and develop the wide range of
         services we offer. Prophet Muhammad ﷺ said: “Allah said: ‘Spend, O son
         of Adam, and I shall spend on you.’
       </p>
-      <form action="#" class="flex flex-col items-center">
-        <div class="progress flex gap-4 items-cente bg-gray-300 w-full">
-          <div class="step1">
-            <i class="fa-solid fa-chevron-down"></i>
-            <p>Step one</p>
-          </div>
-          <div class="border border-red-500 w-10 h-px bottom-0"></div>
 
-          <div class="step2">
-            <i class="fa-solid fa-chevron-right"></i>
-            <p>step two</p>
+      <form action="#" class="flex flex-col items-center mb-8">
+        <div
+          class="progress flex gap-4 items-cente bg-slate-100 w-full justify-center items-center my-6 p-7 rounded-md text-lg"
+        >
+          <div
+            class="step1 text-center flex items-center justify-center flex-col text-green-700"
+          >
+            <i
+              class="fa-solid fa-chevron-down border rounded-s-md p-2 bg-green-700 text-slate-100"
+            ></i>
+            <p>Step One</p>
+          </div>
+          <div class="border border-red-500 w-12 h-px my-auto"></div>
+
+          <div
+            class="step2 text-center flex items-center justify-center flex-col"
+          >
+            <i
+              class="fa-solid fa-chevron-right border rounded-s-md p-2 bg-green-700 text-slate-100"
+            ></i>
+            <p>Step Two</p>
           </div>
           <div class="border border-red-500 w-10 h-px"></div>
 
-          <div class="step3">
-            <i class="fa-solid fa-chevron-right"></i>
-            <p>step three</p>
+          <div
+            class="step3 text-center flex items-center justify-center flex-col"
+          >
+            <i
+              class="fa-solid fa-chevron-right border rounded-s-md p-2 bg-green-700 text-slate-100"
+            ></i>
+            <p>Finish</p>
           </div>
         </div>
+        
 
         <!-- FiledSet2 -->
         <fieldset class="border border-gray-300 rounded-md p-10 w-full">
           <legend class="font-semibold text-3xl">Your Donation</legend>
-          <div>
-            <label for="one">
+          <div class="grid grid-cols-2 gap-1 text-center">
+            <label for="one" class="">
               <input
                 type="radio"
                 id="one"
@@ -138,12 +210,12 @@
                 value="one"
                 class="peer hidden"
               />
-              <span
-                class="peer-checked:bg-red-950 peer-checked:text-white py-5 px-32 bg-white rounded-md text-xl active:bg-red-950"
-                >One-off</span
+              <span id="oneOff"
+              class="peer-checked:bg-red-950 peer-checked:text-white py-5 px- bg-white block w-full rounded-md text-xl"
+                >One-off</span  
               >
             </label>
-            <label for="two">
+            <label for="two" class="">
               <input
                 type="radio"
                 id="two"
@@ -151,14 +223,15 @@
                 value="two"
                 class="peer hidden"
               />
-              <span
-                class="peer-checked:bg-red-950 peer-checked:text-white py-5 px-36 bg-white rounded-md text-xl"
+              <span id="regular"
+                class="peer-checked:bg-red-950 peer-checked:text-white py-5 px- bg-white block w-full rounded-md text-xl"
                 >Regular</span
               >
             </label>
           </div>
-          <div class="amount mt-16">
-            <label for="10">
+
+          <div class="amount mt-16 grid grid-cols-3 gap-1 text-center">
+            <label for="10" class="w-full block">
               <input
                 type="radio"
                 id="10"
@@ -167,7 +240,7 @@
                 class="peer hidden"
               />
               <span
-                class="peer-checked:bg-red-950 peer-checked:text-white py-6 px-24 bg-white rounded-md text-3xl font-semibold"
+                class="peer-checked:bg-red-950 peer-checked:text-white bg-white rounded-md text-3xl font-semibold w-full block py-7"
                 >10</span
               >
             </label>
@@ -180,7 +253,7 @@
                 class="peer hidden"
               />
               <span
-                class="peer-checked:bg-red-950 peer-checked:text-white py-6 px-24 bg-white rounded-md text-3xl font-semibold"
+                class="peer-checked:bg-red-950 peer-checked:text-white bg-white rounded-md text-3xl font-semibold w-full block py-7"
                 >20</span
               >
             </label>
@@ -193,7 +266,7 @@
                 class="peer hidden"
               />
               <span
-                class="peer-checked:bg-red-950 peer-checked:text-white py-6 px-24 bg-white rounded-md text-3xl font-semibold"
+                class="peer-checked:bg-red-950 peer-checked:text-white w-full block bg-white rounded-md text-3xl font-semibold py-7"
                 >30</span
               >
             </label>
@@ -210,7 +283,7 @@
             />
           </div>
 
-          <div class="oftenDonation py-3 px-3 bg-red-950 mt-3 text-white">
+          <div id="preffered_date" class="oftenDonation py-3 px-3 bg-red-950 mt-3 text-white hidden">
             <div class="month">
               <label for="months" class="flex justify-between">
                 <p>How often would you like to donate?</p>
@@ -241,7 +314,7 @@
         </fieldset>
 
         <!-- Filedse2 -->
-        <fieldset
+        <fieldset id="payment_method"
           class="border border-gray-300 rounded-md grid grid-cols-2 w-full gap-3 p-10 my-3"
         >
           <legend class="font-semibold text-3xl">Payment Method</legend>
@@ -270,6 +343,7 @@
         <fieldset class="border border-gray-300 p-10 w-full">
           <legend class="font-semibold text-3xl">About you</legend>
           <div class="">
+            <div id="your_profile">
             <label for="why" class="flex justify-between"
               >Why are you donating?
               <select
@@ -347,6 +421,9 @@
                 class="w-7/12 text-black rounded-md p-3 focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
               />
             </label>
+          </div>
+
+          <div id="your_address" class="hidden">
             <label
               for="email"
               class="flex justify-between p-3 text-black rounded-md"
@@ -405,6 +482,8 @@
               ></select>
             </label>
           </div>
+        </div>
+
           <div class="keepInTouch">
             <h1>Keeping In Touch</h1>
             <p>
@@ -593,19 +672,41 @@
         </fieldset>
       </form>
       <div class="my-4">
-        <button
-          class="donateBtn bg-red-950 text-white rounded-md py-4 px-9 font-semibold text-2xl hover:bg-red-800 trasition duration-500"
-        >
-          Add payment details
-        </button>
+        <div class="mb-12">
+          <a
+            href="/src/pages/complet_payment/index.html"
+            class="donateBtn bg-red-950 text-white rounded-md py-2 px-9 font-semibold text-2xl hover:bg-red-800 trasition duration-500"
+          >
+            Add payment details
+          </a>
+        </div>
+
         <p class="my-4">
           By submitting this form you are agreeing to our
-          <a href="#" class="text-red-500"> terms and conditions </a>
+          <a
+            href="#"
+            class="text-red-500"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+          >
+            terms and conditions
+          </a>
         </p>
         <p>
           This site is protected by reCAPTCHA and the Google
-          <a href="#" class="text-red-400">Privacy Policy</a> and
-          <a href="#" class="text-red-500">Terms of Service</a> apply.
+          <a
+            href="#"
+            class="text-red-400"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+            >Privacy Policy</a
+          >
+          and
+          <a
+            href="#"
+            class="text-red-500"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+            >Terms of Service</a
+          >
+          apply.
         </p>
       </div>
     </div>
@@ -659,61 +760,32 @@
           By clicking ‘Subscribe’ you agree to your information being processed
           by the East London Mosque Trust, in accordance with our
           <a href="#" class="text-red-600 hover:border-b-2 border-red-600"
-            >privacy policy.</a
+            >privacy Policy.</a
           >
         </p>
       </div>
     </form>
 
-
-
-
-
-
-    <script>
+    <!-- Footer -->
+    <div class="footer flex flex-col gap-4 justify-center items-center my-10">
+      <div class="">
+        <ul class="flex gap-5">
+          <li><a href="#" class="text-xl hover:border-b-2 border-red-800">Contact Us</a></li>
+          <li><a href="#" class="text-xl hover:border-b-2 border-red-800">Terms & Condition</a></li>
+          <li><a href="#" class="text-xl hover:border-b-2 border-red-800">Privacy & policy</a></li>
+          <li><a href="#"class="text-xl hover:border-b-2 border-red-800">Login</a></li>
+        </ul>
+      </div>
+      <p> The East London Mosque Trust is a charity (1122613) and a company limited by guarantee (468317) registered in England & Wales.</p>
+    
       
-// Dyas selection
-const optionContainer = document.getElementById("option-container");
-for (let i = 1; i <= 28; i++) {
-  const option = document.createElement("option");
-  option.value = i;
-  option.text = ` ${i}th`;
-  optionContainer.appendChild(option);
-}
+    </div>
 
-// country
-// Get the select element
-const countrySelect = document.getElementById("country-select");
 
-// Fetch the list of countries from the REST Countries API
-fetch("https://restcountries.com/v3.1/all")
-  .then((response) => response.json())
-  .then((countries) => {
-    // Loop through the countries and create an option element for each country
-    countries.forEach((country) => {
-      const option = document.createElement("option");
-      option.value = country.name.common;
-      option.text = country.name.common;
-      countrySelect.add(option);
-    });
-  })
-  .catch((error) => {
-    console.error("Error fetching countries:", error);
-  });
 
-// keeping intouch
-function togglePhoneInput(radioButton) {
-  const phoneInputContainer = document.getElementById(
-    "phone-input-container",
-  );
+<script>
 
-  if (radioButton.value === "yes") {
-    phoneInputContainer.classList.remove("hidden");
-  } else {
-    phoneInputContainer.classList.add("hidden");
-  }
-}
-    </script>
+</script>
 
   </body>
 </html>
