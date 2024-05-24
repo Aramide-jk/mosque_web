@@ -20,64 +20,65 @@
 
 <body class="bg-gray-50">
   <div class=" mt-5">
-     <!-- Header -->
-     <div class="header  grid grid-cols-[1fr] sm:grid-cols-[2fr,1.5fr]  lg:grid-cols-[5fr,2.5fr] auto-rows-auto mx-3 lg:mx-32">
-        <div class="logo flex items-center  my-3 lg:items-center ">
-          <a href="home.html">
-            <!-- <img src="../img-src/logo.jpg" height="100px" width="100px" alt="" /> -->
-            <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque
-          </a>
-    
-        </div>
-  
-        <div class="rightHeader mt-3 mx-3">
-          <div class="calendar">
-            <div class="flex sm:block">
-              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Full Timetable &</a><br />
-              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Calendar</a>
-            </div>
-            <div class="border w-full my-3">Calendar API</div>
+    <!-- Header -->
+    <div
+      class="header  grid grid-cols-[1fr] sm:grid-cols-[2fr,1.5fr]  lg:grid-cols-[5fr,2.5fr] auto-rows-auto mx-3 lg:mx-32">
+      <div class="logo flex items-center  my-3 lg:items-center ">
+        <a href="home.html">
+          <!-- <img src="../img-src/logo.jpg" height="100px" width="100px" alt="" /> -->
+          <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque
+        </a>
+
+      </div>
+
+      <div class="rightHeader mt-3 mx-0 md:mx-3">
+        <div class="calendar">
+          <div class="flex sm:block">
+            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Full
+              Timetable &</a><br />
+            <a href="#"
+              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Calendar</a>
           </div>
-          <div class="socialMedia flex gap-2 ">
-            <div class="inputs relative">
-              <input type="text" class="input border px-1 py-1 rounded-md focus:border-red-900 outline-none"
-                placeholder="Search" />
+          <div class="border w-full my-3">Calendar API</div>
+        </div>
+        <div class="socialMedia flex gap-2 ">
+          <div class="inputs relative hidden md:block">
+            <input type="text" class="input border px-1 py-1 rounded-md focus:border-red-900 outline-none"
+              placeholder="Search" />
+            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500 "></i></a>
+          </div>
+          <!-- <a href="../src/pages/donate/index.html"
+            class="donateBtn bg-red-950 px-4 pt-1 text-white rounded-md hover:bg-red-900 transition-all duration-500">Donate</a> -->
+          <div class="medias flex gap-2 mb-5  text-white w-full">
+            <div>
               <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                  class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500 "></i></a>
+                  class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-700 transition-all duration-500"></i></a>
             </div>
-            <!-- <a href="../src/pages/donate/index.html"
-              class="donateBtn bg-red-950 px-4 pt-1 text-white rounded-md hover:bg-red-900 transition-all duration-500">Donate</a> -->
-            <div class="medias flex gap-2 mb-5  text-white ">
-              <div>
-                <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                    class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-700 transition-all duration-500"></i></a>
-              </div>
-              <div>
-                <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                    class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
-              </div>
-              <div>
-                <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                    class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
-              </div>
-              <div id="menu_btn"><i class="fa-solid fa-bars  bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500 block cursor-pointer sm:hidden"></i></div>
+            <div>
+              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                  class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
+            </div>
+            <div>
+              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                  class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
+            </div>
+            <div id="menu_btn" class="ml-auto"><i
+                class="fa-solid fa-bars  bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500 block cursor-pointer sm:hidden"></i>
             </div>
           </div>
         </div>
       </div>
-  
-      <!-- Navbar -->
-      <div class="navs pb-6 hidden sm:block z-10 absolute w-full">
-        <ul
-          class="nav flex flex-col items-center justify-center uppercase text-center gap-1 sm:gap-5  sm:flex-row gap-y- relative bg-slate-50 bg-opacity-70 z-10 p-4"
-        >
-          <li class="relative group hover:text-red-500">
-            <a
-              href="current_appeal.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >Support Us</a
-            >
-            <!-- <ul
+    </div>
+
+    <!-- Navbar -->
+    <div class="navs pb-6 hidden sm:block z-10 absolute w-full">
+      <ul
+        class="nav flex flex-col items-center justify-center uppercase text-center gap-1 sm:gap-5  sm:flex-row gap-y- relative bg-slate-50 bg-opacity-70 z-10 p-4">
+        <li class="relative group hover:text-red-500">
+          <a href="current_appeal.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Support Us</a>
+          <!-- <ul
               class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4 transition-all duration-500"
             >
               <li>
@@ -95,14 +96,11 @@
                 >
               </li>
             </ul> -->
-          </li>
-          <li class="relative group hover:text-red-500">
-            <a
-              href="#"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >News</a
-            >
-            <!-- <ul
+        </li>
+        <li class="relative group hover:text-red-500">
+          <a href="news.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">News</a>
+          <!-- <ul
               class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4"
             >
               <li>
@@ -134,82 +132,89 @@
                 >
               </li>
             </ul> -->
-          </li>
-          <li class="hover:text-red-500">
-            <a
-              href="#"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >Events</a
-            >
-          </li>
-          <!-- <li><a href="#">Audio and video</a></li> -->
-          <li class="hover:text-red-500">
-            <a
-              href="about_us.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >about Us</a
-            >
-          </li>
-          <li class="hover:text-red-500">
-            <a
-              href="donate.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >Donate</a
-            >
-          </li>
-          <li class="hover:text-red-500">
-            <a
-              href="contact.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
-      </div>
-    
-     
-    
+        </li>
+        <li class="hover:text-red-500">
+          <a href="event.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Events</a>
+        </li>
+        <!-- <li><a href="#">Audio and video</a></li> -->
+        <li class="hover:text-red-500">
+          <a href="about_us.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">about Us</a>
+        </li>
+        <li class="hover:text-red-500">
+          <a href="donate.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Donate</a>
+        </li>
+        <li class="hover:text-red-500">
+          <a href="contact.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+
 
     <!-- Slider -->
     <section class="banner">
       <section class="splide" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
           <ul class="splide__list">
-            <li class="splide__slide h-[50vh] sm:h-[70vh] w-full">
+            <li class="splide__slide h-[50vh] sm:h-[70vh] w-full relative">
+              <div class="absolute top-0 left-0 w-full h-full bg-black/60"></div>
               <div class="bg-[url('../img-src/pexels-pixabay-161276.jpg')] h-full bg-cover bg-center">
-                <div class="absolute top-[50%] left-[50%] sm:top-[50%] sm:left-[50%] md:top-[50%] md:left-[50%] -translate-x-2/4 -translate-y-2/4 text-white">
-             
-                    <h1 class="font-bold text-lg  sm:text-4xl  sm:mb-4 mb-10 ">Your amazing support in Ramadan 2024</h1>
-                    <p class="text-sm  w-full">
+                <div
+                  class="absolute top-[50%] left-[0] sm:top-[50%]  md:top-[50%] flex flex-col gap-y-6 w-full md:text-center px-6 -translate-y-2/4 text-white">
+
+                  <h1 class="font-bold text-lg  sm:text-4xl  sm:mb-4 ">Your amazing support in Ramadan 2024</h1>
+                  <p class="text-sm md:text-xl w-full">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
                     et?
                   </p>
-                  <button class="readMore bg-red-900 hover:bg-red-700">Read more</button>
-                  
+                  <div class="btn">
+                    <button class="readMore bg-red-900 hover:bg-red-700 px-5 py-2 rounded-md">Read more</button>
+
+                  </div>
+
                 </div>
               </div>
             </li>
-            <li class="splide__slide">
-              <div class="bg-[url('../img-src/pexels-konevi-2830460.jpg')] h-full bg-cover bg-center">
-                <div class="absolute top-[50%] left-[50%] sm:top-[50%] sm:left-[50%] md:top-[50%] md:left-[50%] -translate-x-2/4 -translate-y-2/4 text-white">
-                  <h1 class="font-bold text-lg sm:text-2xl  lg:text-4xl  mb-4 sm:mb-10">Your amazing support in Ramadan 2024</h1>
-                  <p>
+             <li class="splide__slide h-[50vh] sm:h-[70vh] w-full relative">
+              <div class="absolute top-0 left-0 w-full h-full bg-black/60"></div>
+              <div class="bg-[url('../img-src/pexels-pixabay-161276.jpg')] h-full bg-cover bg-center">
+                <div
+                  class="absolute top-[50%] left-[0] sm:top-[50%]  md:top-[50%] flex flex-col gap-y-6 w-full md:text-center px-6 -translate-y-2/4 text-white">
+
+                  <h1 class="font-bold text-lg  sm:text-4xl  sm:mb-4 ">Your amazing support in Ramadan 2024</h1>
+                  <p class="text-sm md:text-xl w-full">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
                     et?
                   </p>
-                  <button class="readMore">Read more</button>
+                  <div class="btn">
+                    <button class="readMore bg-red-900 hover:bg-red-700 px-5 py-2 rounded-md">Read more</button>
+
+                  </div>
+
                 </div>
+              </div>
             </li>
-            <li class="splide__slide">
-              <div class="bg-[url('../img-src/pexels-thirdman-8489273.jpg')] h-full bg-cover bg-center">
-                <div class="absolute top-[50%] left-[50%] sm:top-[50%] sm:left-[50%] md:top-[50%] md:left-[50%] -translate-x-2/4 -translate-y-2/4 text-white">
-                  <h1 class="font-bold text-lg sm:text-2xl  lg:text-4xl  mb-4 sm:mb-10">Your amazing support in Ramadan 2024</h1>
-                  <p>
+            <li class="splide__slide h-[50vh] sm:h-[70vh] w-full relative">
+              <div class="absolute top-0 left-0 w-full h-full bg-black/60"></div>
+              <div class="bg-[url('../img-src/pexels-pixabay-161276.jpg')] h-full bg-cover bg-center">
+                <div
+                  class="absolute top-[50%] left-[0] sm:top-[50%]  md:top-[50%] flex flex-col gap-y-6 w-full md:text-center px-6 -translate-y-2/4 text-white">
+
+                  <h1 class="font-bold text-lg  sm:text-4xl  sm:mb-4 ">Your amazing support in Ramadan 2024</h1>
+                  <p class="text-sm md:text-xl w-full">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
                     et?
                   </p>
-                  <button class="readMore">Read more</button>
+                  <div class="btn">
+                    <button class="readMore bg-red-900 hover:bg-red-700 px-5 py-2 rounded-md">Read more</button>
+
+                  </div>
+
                 </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -217,42 +222,49 @@
     </section>
 
     <!-- News -->
-    <div class="grid updatesWrapper grid-cols-[1fr] mt-10 lg:grid-cols-[7fr,5fr]  lg:mx-40 sm:mx-10 gap-2 sm:gap-10 md:my-10 md:gap-7  pb-12 mx-5 ">
-      <div class="grid latestNews self-stretch  justify-cente">
-        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 ">Latest News & Feautures</h1>
+    <div
+      class="grid updatesWrapper grid-cols-[1fr] mt-5 lg:grid-cols-[7fr,5fr]  lg:mx-40 sm:mx-10 gap-2 sm:gap-10 md:my-5 md:gap-7  pb-12 mx-5  ">
+      <div class="grid latestNews self-stretch  justify-center">
+        <h1 class="text-2xl sm:text-3xl lg:text-3xl font-bold mb-6 ">Latest News & Feautures</h1>
         <div
           class="latestNewsBanner bg-[url('../img-src/istockphoto-1404962407-1024x1024.jpg')] h-[30vh] bg-cover bg-center  flex items-center p-6 mb-8">
           <div class="flex flex-col justify-center text-white">
-           <a href="#"><p class=" mt-[15rem] -ml-[1.5rem] sm:hidden  text-red-800 text-lg md:text-2xl">Volunteer For Mosque</p>
-           </a>
+            <a href="#">
+              <p class=" mt-[15rem] -ml-[1.5rem] sm:hidden  text-red-800 text-lg md:text-2xl">Volunteer For Mosque</p>
+            </a>
 
             <a href="#">
               <h1 class="font-bold  sm:text-xl text-lg sm:mb-3 hidden sm:block">Volunteer For Mosque</h1>
             </a>
-            <p class="text-[1rem] hidden sm:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, vitae. Consequatur sequi commodi minima
+            <p class="text-[1rem] hidden sm:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, vitae.
+              Consequatur sequi commodi minima
               labore nihil ipsum ipsa ex voluptates.</p>
           </div>
         </div>
-        
-        <div class="grid quranJournalWrapper grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mt-5 text-red-800 text-2xl md:text-2xl gap-6">
-          <div class="quranJournal">
-            <a href="#">
-              <img src="/img-src/pexels-aqtai-2233399.jpg" class="h-36 w-full">
-              <p class="text-lg">Qur’an Journaling for Revert Sisters</p>
-            </a>
-          </div>
-          <div class="allahMercy">
-            <a href="#">
-              <img src="/img-src/pexels-pixabay-161276.jpg" class="h-36 w-full">
-              <p class="text-lg">Despair Not, Allah Has Pledged to Grant Victory to Our Brothers and Sisters in Palestine</p>
-            </a>
+
+        <div
+          class="quranJournalWrapper text-red-800 text-2xl md:text-2xl ">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 ">
+            <div class="quranJournal">
+              <a href="#">
+                <img src="/img-src/pexels-aqtai-2233399.jpg" class="h-36 w-full">
+                <p class="text-lg">Qur’an Journaling for Revert Sisters</p>
+              </a>
+            </div>
+            <div class="allahMercy">
+              <a href="#">
+                <img src="/img-src/pexels-pixabay-161276.jpg" class="h-36 w-full">
+                <p class="text-lg">Despair Not, Allah Has Pledged to Grant Victory to Our Brothers and Sisters in
+                  Palestine</p>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="border my-5 sm:my-5 "></div>
-
       </div>
-      <div class="grid latestUpdates self-start ">
-        <h1 class="text-2xl lg:text-4xl font-bold mb-4">Updates</h1>
+
+      
+      <div class="grid latestUpdates self-start">
+        <h1 class="text-2xl md:text-3xl font-bold mb-6">Updates</h1>
         <div class="updateswrap flex flex-col sm:gap-8 gap-3 text-red-800 lg:text-2xl text-lg">
           <div class="update">
             <a href="#">
@@ -280,13 +292,15 @@
     </div>
 
     <!-- Quick donate -->
-    <div class="quickDonateWrapper bg-[url('../img-src/pexels-pixabay-161276.jpg')] bg-cover bg-center grid grid-cols-1 md:grid-cols-2 py-5 md:py-12 px-5 md:px-40 gap-4 sm:gap-8">
+    <div
+      class="quickDonateWrapper bg-[url('../img-src/pexels-pixabay-161276.jpg')] bg-cover bg-center  py-5 md:py-12 px-5 lg:px-40  relative -my-10">
+      <div class="absolute left-0 top-0 w-full h-full bg-black/60"></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 relative z-10">
       <div class=" quickDonate">
-        <div class="quickDonateImage w-full">
-          <img src="../img-src/zakat2.jpg" class="w-full sm:hidden block" alt="">
-        </div>
+
         <h1 class="font-bold text-red-700 text-2xl mb-4">Quick Donate</h1>
-        <p class="text-lg text-white">Your contribution will help us to maintain and develop the wide range of services we offer. Prophet Muhammad
+        <p class="text-lg text-white">Your contribution will help us to maintain and develop the wide range of services
+          we offer. Prophet Muhammad
           ﷺ said: “Allah said: ‘Spend, O son of Adam, and I shall spend on you.’”</p>
         <form class="donateBtns mt-8 md:mt-12 w-7/12 md:w-7/12 flex flex-col gap-y-4">
           <div class="donateAmountWrapper flex gap-3">
@@ -309,105 +323,126 @@
           </div>
 
           <div class="">
-           <a href="donate.html" class="donateBtn  bg-red-950 text-white rounded-md py-2 px-7">
-            
+            <a href="donate.html" class="donateBtn  bg-red-950 text-white rounded-md py-2 px-7">
+
               Donate
-            
-           </a>
+
+            </a>
           </div>
         </form>
       </div>
-      <div class="quickDonateImage w-full">
-        <img src="../img-src/zakat2.jpg" class="w-full h-full hidden sm:block" alt="">
+      <div class="quickDonateImage w-full order-first md:order-last">
+        <img src="../img-src/zakat2.jpg" class="w-full h-full" alt="">
       </div>
+    </div>
+
     </div>
 
     <!-- About us -->
- <div class="grid grid-cols-1 md:grid-cols-2 px-5 md:px-40 gap-6 mt-20">
-  <div class="relative group h-56">
-    <img src="../img-src/pexels-pixabay-161276.jpg" alt="Image 1" class="w-full h-full object-cover">
-    <div class="absolute inset-0 flex flex-col  justify-center  bg-black bg-opacity-50 group-hover:bg-opacity-80 transition duration-700">
-      <h1 class="text-white text-4xl font-bold mb-10 mx-10">Our School</h1>
-      <div class="absolute inset-0 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
-      <p class="text-white text-lg mt-20 mx-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aut, alias magni beatae impedit suscipit quae ipsum. Totam, dolorem commodi</p>
-    </div>
-    </div>
-  </div>
-  <div class="relative group h-56">
-    <img src="../img-src/pexels-pixabay-161276.jpg" alt="Image 1" class="w-full h-full object-cover">
-    <div class="absolute inset-0 flex flex-col  justify-center  bg-black bg-opacity-50 group-hover:bg-opacity-80 transition duration-700">
-      <h1 class="text-white text-4xl font-bold mb-10 mx-10">Our School</h1>
-      <div class="absolute inset-0 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
-      <p class="text-white text-lg mt-20 mx-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aut, alias magni beatae impedit suscipit quae ipsum. Totam, dolorem commodi</p>
-    </div>
-    </div>
-  </div>
-  <div class="relative group h-56">
-    <img src="../img-src/pexels-pixabay-161276.jpg" alt="Image 1" class="w-full h-full object-cover">
-    <div class="absolute inset-0 flex flex-col  justify-center  bg-black bg-opacity-50 group-hover:bg-opacity-80 transition duration-700">
-      <h1 class="text-white text-4xl font-bold mb-10 mx-10">Our School</h1>
-      <div class="absolute inset-0 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
-      <p class="text-white text-lg mt-20 mx-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aut, alias magni beatae impedit suscipit quae ipsum. Totam, dolorem commodi</p>
-    </div>
-    </div>
-  </div>
-  <div class="relative group h-56">
-    <img src="../img-src/pexels-pixabay-161276.jpg" alt="Image 1" class="w-full h-full object-cover">
-    <div class="absolute inset-0 flex flex-col  justify-center  bg-black bg-opacity-50 group-hover:bg-opacity-80 transition duration-700">
-      <h1 class="text-white text-4xl font-bold mb-10 mx-10">Our School</h1>
-      <div class="absolute inset-0 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
-      <p class="text-white text-lg mt-20 mx-10 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aut, alias magni beatae impedit suscipit quae ipsum. Totam, dolorem commodi</p>
-    </div>
-    </div>
-  </div>
-</div>
-
-<!-- Subscrib for latest news -->
-  <form action="#" class="mt-14 sm:mt-20 p-5 md:px-40 md:mr-48 w-full  bg-gray-100">
-    <h1 class=" text-2xl sm:text-3xl capitalize text-gray-400">Subscribe for the latest news</h1>
-    <p class="my-6">Sign up for the latest Nigeria Mosque news. Receive important announcements, regular updates and exclusive content delivered straight to your inbox. (* indicates required field)</p>
-    <div class="flex flex-col gap-4">
-      <label for="firstname" class="flex flex-col gap-1 text-xl">First Name
-        <input type="text" name="firstname" id="firstname" class="border p-2 rounded-md focus:border-y-2 focus:border-t-red-800 focus:border-b-red-800  focus:outline-none">
-      </label>
-      <label for="lastname" class="flex flex-col gap-1 text-xl">Last Name
-        <input type="text" name="lastname" id="lastname" class="border p-2 rounded-md focus:border-y-2 focus:border-t-red-800 focus:border-b-red-800  focus:outline-none">
-      </label>
-      <label for="email" class="flex flex-col gap-1 text-xl">Email Address*
-        <input type="email" name="email" id="email" class="border p-2 rounded-md focus:border-y-2 focus:border-t-red-800 focus:border-b-red-800  focus:outline-none">
-      </label>
-      <div class="py-4">
-        <button class="donateBtn  bg-red-950 text-white text-lg rounded-md py-2 px-7 hover:bg-red-800 transition duration-700">
-         Subscribe
-        </button>
+    <div class="grid grid-cols-1 md:grid-cols-2 px-5 md:px-40 gap-6 mt-20">
+      <div class="relative group h-56">
+        <img src="../img-src/pexels-pixabay-161276.jpg" alt="Image 1" class="w-full h-full object-cover">
+        <div
+          class="absolute inset-0 flex flex-col  justify-center  bg-black bg-opacity-50 group-hover:bg-opacity-80 transition duration-700">
+          <h1 class="text-white text-2xl font-bold mb-10 mx-10">Our School</h1>
+          <div
+            class="absolute inset-0 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+            <p class="text-white text-sm md:text-lg mt-20 mx-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+              aut, alias magni beatae impedit suscipit quae ipsum. Totam, dolorem commodi</p>
+          </div>
+        </div>
       </div>
-        <p>By clicking ‘Subscribe’ you agree to your information being processed by the East London Mosque Trust, in accordance with our <a href="#" class="text-red-600 hover:border-b-2 border-red-600">privacy policy.</a></p>
-  </form>
-
-  <!-- Footer -->
-  <div class="footer flex flex-col gap-4 justify-center items-center my-10">
-    <div class="">
-      <ul class="flex gap-5">
-        <li><a href="conatct.html" class="text-xl hover:border-b-2 border-red-800">Contact Us</a></li>
-        <li><a href="terms&condition.html" class="text-xl hover:border-b-2 border-red-800">Terms & Condition</a></li>
-        <li><a href="privacy.html" class="text-xl hover:border-b-2 border-red-800">Privacy & policy</a></li>
-        <li><a href="login.html"class="text-xl hover:border-b-2 border-red-800">Login</a></li>
-      </ul>
+      <div class="relative group h-56">
+        <img src="../img-src/pexels-pixabay-161276.jpg" alt="Image 1" class="w-full h-full object-cover">
+        <div
+          class="absolute inset-0 flex flex-col  justify-center  bg-black bg-opacity-50 group-hover:bg-opacity-80 transition duration-700">
+          <h1 class="text-white text-2xl font-bold mb-10 mx-10">Our School</h1>
+          <div
+            class="absolute inset-0 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+            <p class="text-white text-sm md:text-lg mt-20 mx-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+              aut, alias magni beatae impedit suscipit quae ipsum. Totam, dolorem commodi</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative group h-56">
+        <img src="../img-src/pexels-pixabay-161276.jpg" alt="Image 1" class="w-full h-full object-cover">
+        <div
+          class="absolute inset-0 flex flex-col  justify-center  bg-black bg-opacity-50 group-hover:bg-opacity-80 transition duration-700">
+          <h1 class="text-white text-2xl font-bold mb-10 mx-10" >Our School</h1>
+          <div
+            class="absolute inset-0 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+            <p class="text-white text-sm md:text-lg mt-20 mx-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+              aut, alias magni beatae impedit suscipit quae ipsum. Totam, dolorem commodi</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative group h-56">
+        <img src="../img-src/pexels-pixabay-161276.jpg" alt="Image 1" class="w-full h-full object-cover">
+        <div
+          class="absolute inset-0 flex flex-col  justify-center  bg-black bg-opacity-50 group-hover:bg-opacity-80 transition duration-700">
+          <h1 class="text-white text-2xl font-bold mb-10 mx-10">Our School</h1>
+          <div
+            class="absolute inset-0 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+            <p class="text-white text-sm md:text-lg mt-20 mx-10 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+              aut, alias magni beatae impedit suscipit quae ipsum. Totam, dolorem commodi</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <p> The East London Mosque Trust is a charity (1122613) and a company limited by guarantee (468317) registered in England & Wales.</p>
-  
-    
-  </div>
+
+    <!-- Subscrib for latest news -->
+    <form action="#" class="mt-10 sm:mt-20 p-5 md:px-40 md:mr-48 w-full  bg-gray-100">
+      <h1 class=" text-2xl sm:text-3xl capitalize text-gray-400">Subscribe for the latest news</h1>
+      <p class="my-6">Sign up for the latest Nigeria Mosque news. Receive important announcements, regular updates and
+        exclusive content delivered straight to your inbox. (* indicates required field)</p>
+      <div class="flex flex-col gap-4">
+        <label for="firstname" class="flex flex-col gap-1 text-xl">First Name
+          <input type="text" name="firstname" id="firstname"
+            class="border p-2 rounded-md focus:border-y-2 focus:border-t-red-800 focus:border-b-red-800  focus:outline-none">
+        </label>
+        <label for="lastname" class="flex flex-col gap-1 text-xl">Last Name
+          <input type="text" name="lastname" id="lastname"
+            class="border p-2 rounded-md focus:border-y-2 focus:border-t-red-800 focus:border-b-red-800  focus:outline-none">
+        </label>
+        <label for="email" class="flex flex-col gap-1 text-xl">Email Address*
+          <input type="email" name="email" id="email"
+            class="border p-2 rounded-md focus:border-y-2 focus:border-t-red-800 focus:border-b-red-800  focus:outline-none">
+        </label>
+        <div class="py-4">
+          <button
+            class="donateBtn  bg-red-950 text-white text-lg rounded-md py-2 px-7 hover:bg-red-800 transition duration-700">
+            Subscribe
+          </button>
+        </div>
+        <p>By clicking ‘Subscribe’ you agree to your information being processed by the East London Mosque Trust, in
+          accordance with our <a href="#" class="text-red-600 hover:border-b-2 border-red-600">privacy policy.</a></p>
+    </form>
+
+    <!-- Footer -->
+    <div class="footer flex flex-col gap-4 justify-center items-center my-10">
+      <div class="">
+        <ul class="flex gap-5">
+          <li><a href="conatct.html" class="text-xl hover:border-b-2 border-red-800">Contact Us</a></li>
+          <li><a href="terms&condition.html" class="text-xl hover:border-b-2 border-red-800">Terms & Condition</a></li>
+          <li><a href="privacy.html" class="text-xl hover:border-b-2 border-red-800">Privacy & policy</a></li>
+          <li><a href="login.html" class="text-xl hover:border-b-2 border-red-800">Login</a></li>
+        </ul>
+      </div>
+      <p> The East London Mosque Trust is a charity (1122613) and a company limited by guarantee (468317) registered in
+        England & Wales.</p>
+
+
+    </div>
 
   </div>
- <script>
-  // Slider
-new Splide( '.splide' ,{
-  loop:true,
-  autoplay:true,
-}).mount();
+  <script>
+    // Slider
+    new Splide('.splide', {
+      loop: true,
+      autoplay:true,
+    }).mount();
 
- </script>
+  </script>
 
 
 </body>
