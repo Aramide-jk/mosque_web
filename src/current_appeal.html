@@ -20,172 +20,175 @@
 </head>
 <body>
     <!-- Header -->
-    <div class="header grid grid-cols-[5fr,2.5fr] auto-rows-auto mx-32">
-        <div class="logo flex items-center">
-          <a href="home.html">
-            <!-- <img src="../img-src/logo.jpg" height="100px" width="100px" alt="" /> -->
-            <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque
-          </a>
-    
-        </div>
+    <div class="header  grid grid-cols-[1fr] sm:grid-cols-[2fr,1.5fr]  lg:grid-cols-[5fr,2.5fr] auto-rows-auto mx-3 lg:mx-32">
+      <div class="logo flex items-center  my-3 lg:items-center ">
+        <a href="home.html">
+          <!-- <img src="../img-src/logo.jpg" height="100px" width="100px" alt="" /> -->
+          <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque
+        </a>
   
-        <div class="rightHeader ">
-          <div class="calendar">
+      </div>
+
+      <div class="rightHeader mt-3 mx-3">
+        <div class="calendar">
+          <div class="flex sm:block">
+            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Full Timetable &</a><br />
+            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Calendar</a>
+          </div>
+          <div class="border w-full my-3">Calendar API</div>
+        </div>
+        <div class="socialMedia flex gap-2 ">
+          <div class="inputs relative">
+            <input type="text" class="input border px-1 py-1 rounded-md focus:border-red-900 outline-none"
+              placeholder="Search" />
+            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500 "></i></a>
+          </div>
+          <!-- <a href="../src/pages/donate/index.html"
+            class="donateBtn bg-red-950 px-4 pt-1 text-white rounded-md hover:bg-red-900 transition-all duration-500">Donate</a> -->
+          <div class="medias flex gap-2 mb-5  text-white ">
             <div>
-              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Full Timetable &</a><br />
-              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Calendar</a>
-            </div>
-            <div class="border w-full my-3"></div>
-          </div>
-          <div class="socialMedia flex gap-2">
-            <div class="inputs relative">
-              <input type="text" class="input border px-1 py-1 rounded-md focus:border-red-900 outline-none"
-                placeholder="Search" />
               <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                  class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500"></i></a>
+                  class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-700 transition-all duration-500"></i></a>
             </div>
-            <!-- <a href="../src/pages/donate/index.html"
-              class="donateBtn bg-red-950 px-4 pt-1 text-white rounded-md hover:bg-red-900 transition-all duration-500">Donate</a> -->
-            <div class="medias flex gap-2  text-white">
-              <div>
-                <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                    class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-900 transition-all duration-500"></i></a>
-              </div>
-              <div>
-                <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                    class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-900 transition-all duration-500"></i></a>
-              </div>
-              <div>
-                <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                    class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-900 transition-all duration-500"></i></a>
-              </div>
+            <div>
+              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                  class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
             </div>
+            <div>
+              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                  class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
+            </div>
+            <div id="menu_btn"><i class="fa-solid fa-bars  bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500 block cursor-pointer sm:hidden"></i></div>
           </div>
         </div>
       </div>
-  
-      <!-- Navbar -->
-      <div class="navs pb-6">
-        <ul
-          class="nav flex items-center justify-center uppercase text-center gap-5 mt-5"
-        >
-          <li class="relative group">
-            <a
-              href="#"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >Support Us</a
-            >
-            <ul
-              class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4 transition-all duration-500"
-            >
-              <li>
-                <a
-                  href="current_appeal.html"
-                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                  >Current Appeals</a
-                >
-              </li>
-              <li>
-                <a
-                  href="donation_useage"
-                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                  >How Use Your Donations</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="relative group">
-            <a
-              href="news.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >News</a
-            >
-            <!-- <ul
-              class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                  >NEWS</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                  >ABOUT ISLAM</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                  >FROM THE IMAM'S DESK</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                  >LEADERSHIP IN THE COMMUNITY</a
-                >
-              </li>
-            </ul> -->
-          </li>
-          <li>
-            <a
-              href="event.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >Events</a
-            >
-          </li>
-          <!-- <li><a href="#">Audio and video</a></li> -->
-          <li>
-            <a
-              href="about_us.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >about Us</a
-            >
-          </li>
-          <li>
-            <a
-              href="donate.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >Donate</a
-            >
-          </li>
-          <li>
-            <a
-              href="contact.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
-      </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navs pb-6 hidden sm:block z-10 absolute w-full">
+      <ul
+        class="nav flex flex-col items-center justify-center uppercase text-center gap-1 sm:gap-5  sm:flex-row gap-y- relative bg-slate-50 bg-opacity-70 z-10 p-4"
+      >
+        <li class="relative group hover:text-red-500">
+          <a
+            href="current_appeal.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+            >Support Us</a
+          >
+          <!-- <ul
+            class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4 transition-all duration-500"
+          >
+            <li>
+              <a
+                href="current_appeal.html"
+                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                >Current Appeals</a
+              >
+            </li>
+            <li>
+              <a
+                href="donation_usage"
+                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                >How Use Your Donations</a
+              >
+            </li>
+          </ul> -->
+        </li>
+        <li class="relative group hover:text-red-500">
+          <a
+            href="#"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+            >News</a
+          >
+          <!-- <ul
+            class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4"
+          >
+            <li>
+              <a
+                href="#"
+                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                >NEWS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                >ABOUT ISLAM</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                >FROM THE IMAM'S DESK</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                >LEADERSHIP IN THE COMMUNITY</a
+              >
+            </li>
+          </ul> -->
+        </li>
+        <li class="hover:text-red-500">
+          <a
+            href="#"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+            >Events</a
+          >
+        </li>
+        <!-- <li><a href="#">Audio and video</a></li> -->
+        <li class="hover:text-red-500">
+          <a
+            href="about_us.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+            >about Us</a
+          >
+        </li>
+        <li class="hover:text-red-500">
+          <a
+            href="donate.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+            >Donate</a
+          >
+        </li>
+        <li class="hover:text-red-500">
+          <a
+            href="contact.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+    </div>
   
       <!-- Slider -->
       <section class="banner">
         <section class="splide" aria-label="Splide Basic HTML Example">
           <div class="splide__track">
             <ul class="splide__list">
-              <li class="splide__slide h-[70vh] w-full">
+              <li class="splide__slide h-[50vh] sm:h-[70vh] w-full">
                 <div class="bg-[url('../img-src/pexels-pixabay-161276.jpg')] h-full bg-cover bg-center">
-                  <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 text-white">
-                    <h1 class="font-bold text-4xl mb-4">Your amazing support in Ramadan 2024</h1>
-                    <p>
+                  <div class="absolute top-[50%] left-[50%] sm:top-[50%] sm:left-[50%] md:top-[50%] md:left-[50%] -translate-x-2/4 -translate-y-2/4 text-white">
+               
+                      <h1 class="font-bold text-lg sm:text-2xl  lg:text-4xl  mb-4 sm:mb-10 ">Your amazing support in Ramadan 2024</h1>
+                      <p class="text-sm  w-full">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
                       et?
                     </p>
-                    <button class="readMore">Read more</button>
+                    <button class="readMore bg-red-900 hover:bg-red-700">Read more</button>
+                    
                   </div>
                 </div>
               </li>
               <li class="splide__slide">
                 <div class="bg-[url('../img-src/pexels-konevi-2830460.jpg')] h-full bg-cover bg-center">
-                  <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 text-white">
-                    <h1 class="font-bold text-4xl mb-4">Your amazing support in Ramadan 2024</h1>
+                  <div class="absolute top-[50%] left-[50%] sm:top-2/4 sm:left-2/4 -translate-x-2/4 -translate-y-2/4 text-white">
+                    <h1 class="font-bold text-lg  sm:text-4xl  sm:mb-4">Your amazing support in Ramadan 2024</h1>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
                       et?
@@ -195,8 +198,8 @@
               </li>
               <li class="splide__slide">
                 <div class="bg-[url('../img-src/pexels-thirdman-8489273.jpg')] h-full bg-cover bg-center">
-                  <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 text-white">
-                    <h1 class="font-bold text-4xl mb-4">Your amazing support in Ramadan 2024</h1>
+                  <div class="absolute top-[50%] left-[50%] sm:top-2/4 sm:left-2/4 -translate-x-2/4 -translate-y-2/4 text-white">
+                    <h1 class="font-bold text-lg  sm:text-4xl  sm:mb-4">Your amazing support in Ramadan 2024</h1>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
                       et?
@@ -209,56 +212,56 @@
         </section>
       </section>
 
-<div class="mx-32 my-12 ">
-    <h1 class=" font-semibold text-3xl">Your donations</h1>
-    <h2 class="text-xl text-red-900 my-4">You can help the Mosque provide services for thousands of people every week.
+<div class="md:mx-32 my-4 mx-5 md:my-12 ">
+    <h1 class=" font-semibold text-xl md:text-3xl">Your donations</h1>
+    <h2 class="text-lg md:text-xl text-red-900 my-2 md:my-4">You can help the Mosque provide services for thousands of people every week.
     </h2>
-    <p class="text-lg">Your donations really make a difference, may Allah reward you for every penny you contribute. Find our more about how we used your donations <a href="/src/pages/support_us/donation_useage/index.html">here.</a></p>
+    <p class="text-lg sm:text-lg">Your donations really make a difference, may Allah reward you for every penny you contribute. Find our more about how we used your donations <a href="/src/pages/support_us/donation_useage/index.html">here.</a></p>
 
-    <p class="my-4">Prophet Muhammad ﷺ said:</p>
+    <p class="my-2 sm:my-4">Prophet Muhammad ﷺ said:</p>
         
-            <div class="border-l-2 border-b-2 h-10 w-1/4 border-red-900 ">
-                <p class="relativ ml-4 text-lg"> Charity does not decrease wealth. </p>
+            <div class="border-l-2 border-b-2 h-10 w-full sm:w-[] md:w-[60%] lg:w-[60%] mt-4 border-red-900 ">
+                <p class="relativ ml-2  md:ml-4 text-lg"> Charity does not decrease wealth. </p>
         </div>
 
-         <p class="text-lg my-8">
+         <p class="text-lg my-5 sm:my-8">
         Below are some of our appeals and fundraising activities – plus the last three donations made on our website (you can choose to be anonymous if you wish).
     </p>
-    <h1 class="text-xl font-semibold">
+    <h1 class="text-lg :text-xl font-semibold">
         Help fund our vital work along with
     </h1>
-    <div class="border-b my-6 w-1/2"></div>
+    <div class="border-b my-6 md:w-1/2"></div>
 
     <!-- Current Appeal -->
-    <div id="container" class="container grid grid-cols-3 gap-6 p-6 pb-32 border border-red-900 text-lg">
-        <div class="donate">
+    <div id="container" class="containe grid grid-cols-1 sm:grid-cols-2 md;grid-cols-3 gap-4 sm:gap-6 pb-10 sm:pb-32 sm:border border-red-900 text-lg mx-">
+        <div class="donate border-2 p-2 sm:border-2">
             <div class="img ">
                 <a href="donate.html" class="block hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
                 >
                     <img src="/img-src/pexels-thirdman-8489273.jpg" class="w-full h-40" alt=""></div>
-                    <h1 class="text-3xl my-4 capitalize text-red-900">Make a donation now</h1>
+                    <h1 class="text-xl sm:text-3xl my-4 capitalize text-red-900">Make a donation now</h1>
                 </a>
                 <p>
                     Your contribution will help us to maintain and develop the wide range of services we offer.
                     Prophet Muhammad ﷺ said: “Allah said: ‘Spend, O son of Adam, and I shall spend on you.’”
                     </p>
         </div>
-        <div class="donate">
+        <div class="donate border-2 p-2 sm:border-2">
             <div class="img ">
                 <a href="donate.html" class="block hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">
                     <img src="/img-src/foundation.jpg" class="w-full h-40" alt=""></div>
-                    <h1 class="text-3xl my-4 capitalize text-red-900">Helps Us Complete The Prayer Hall</h1>
+                    <h1 class="text-xl sm:text-3xl my-4 capitalize text-red-900">Helps Us Complete The Prayer Hall</h1>
                 </a>
                 <p>
                    
 With your support the Mosque can finish the expansion of the main prayer halls for men and women
                     </p>
         </div>
-        <div class="donate">
+        <div class="donate border-2 p-2 sm:border-2">
             <div class="img ">
                 <a href="donate.html" class="block hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">
                     <img src="/img-src/zakat.jpg" class="w-full h-40" alt=""></div>
-                    <h1 class="text-3xl my-4 capitalize text-red-900">Giving Zakah</h1>
+                    <h1 class="text-xl sm:text-3xl my-4 capitalize text-red-900">Giving Zakah</h1>
                 </a>
                 <p>
                     
@@ -266,83 +269,71 @@ We have a Zakah account to ensure it is only used as prescribed in the Qur’an 
 
                     </p>
         </div>
-        <div class="donate">
+        <div class="donate border-2 p-2 sm:border-2">
             <div class="img ">
                 <a href="donate.html" class="block hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
                 >
                     <img src="/img-src/zakat.jpg" class="w-full h-40" alt=""></div>
-                    <h1 class="text-3xl my-4 capitalize text-red-900">Helps Us Complete The Prayer Hall</h1>
+                    <h1 class="text-xl sm:text-3xl my-4 capitalize text-red-900">Helps Us Complete The Prayer Hall</h1>
                 </a>
                 <p>
                     Your contribution will help us to maintain and develop the wide range of services we offer.
                     Prophet Muhammad ﷺ said: “Allah said: ‘Spend, O son of Adam, and I shall spend on you.’”
                     </p>
         </div>
-        <div class="donate">
+        <div class="donate border-2 p-2 sm:border-2">
             <div class="img ">
                 <a href="donate.html" class="block hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
                 >
                     <img src="/img-src/wall3.jpg" class="w-full h-40" alt=""></div>
-                    <h1 class="text-3xl my-4 capitalize text-red-900">Make a donation now</h1>
+                    <h1 class="text-xl sm:text-3xl my-4 capitalize text-red-900">Make a donation now</h1>
                 </a>
                 <p>
                     Your contribution will help us to maintain and develop the wide range of services we offer.
                     Prophet Muhammad ﷺ said: “Allah said: ‘Spend, O son of Adam, and I shall spend on you.’”
                     </p>
         </div>
-        <div class="donate">
+        <div class="donate border-2 p-2 sm:border-2">
             <div class="img ">
                 <a href="donate.html" class="block hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
                 >
                     <img src="/img-src/sky2.jpg" class="w-full h-40" alt=""></div>
-                    <h1 class="text-3xl my-4 capitalize text-red-900">Make a donation now</h1>
+                    <h1 class="text-xl sm:text-3xl my-4 capitalize text-red-900">Make a donation now</h1>
                 </a>
                 <p>
                     Your contribution will help us to maintain and develop the wide range of services we offer.
                     Prophet Muhammad ﷺ said: “Allah said: ‘Spend, O son of Adam, and I shall spend on you.’”
                     </p>
         </div>
-        <div class="donate">
+        <div class="donate border-2 p-2 sm:border-2">
             <div class="img ">
                 <a href="donate.html" class="block hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
                 >
                     <img src="/img-src/pexels-aqtai-2233399.jpg" class="w-full h-40" alt=""></div>
-                    <h1 class="text-3xl my-4 capitalize text-red-900">Make a donation now</h1>
+                    <h1 class="text-xl sm:text-3xl my-4 capitalize text-red-900">Make a donation now</h1>
                 </a>
                 <p>
                     Your contribution will help us to maintain and develop the wide range of services we offer.
                     Prophet Muhammad ﷺ said: “Allah said: ‘Spend, O son of Adam, and I shall spend on you.’”
                     </p>
         </div>
-        <div class="donate">
+        <div class="donate border-2 p-2 sm:border-2">
             <div class="img ">
                 <a href="donate.html" class="block hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
                 >
                     <img src="/img-src/pexels-thirdman-8489273.jpg" class="w-full h-40" alt=""></div>
-                    <h1 class="text-3xl my-4 capitalize text-red-900">Make a donation now</h1>
+                    <h1 class="text-xl sm:text-3xl my-4 capitalize text-red-900">Make a donation now</h1>
                 </a>
                 <p>
                     Your contribution will help us to maintain and develop the wide range of services we offer.
                     Prophet Muhammad ﷺ said: “Allah said: ‘Spend, O son of Adam, and I shall spend on you.’”
                     </p>
         </div>
-        <div class="donate contain">
-            <div class="img ">
-                <a href="donate.html" class="block hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                >
-                    <img src="/img-src/pexels-pixabay-161276.jpg" class="w-full h-40" alt=""></div>
-                    <h1 class="text-3xl my-4 capitalize text-red-900">Make a donation now</h1>
-                </a>
-                <p>
-                    Your contribution will help us to maintain and develop the wide range of services we offer.
-                    Prophet Muhammad ﷺ said: “Allah said: ‘Spend, O son of Adam, and I shall spend on you.’”
-                    </p>
-        </div>
-
+       
     </div>
-    <div class=" relative bottom-16  flex gap-3 items-center justify-center">
+    <div class=" relative bottom-3 sm:bottom-16  flex gap-2 sm:gap-3 items-center justify-center">
         <div class="">
-            <a href="donate.html" class="donateBtn  bg-red-950 text-white rounded-md py-2 px-7  hover:bg-red-700 transition-all duration-500 my-4">
+            <a href="donate.html" class="donateBtn  bg-red-950 text-white rounded-md py-2 px-3  sm:px-7  hover:bg-red-700 transition-all duration-500 my-4">
              
                Load More Project
              
@@ -350,7 +341,7 @@ We have a Zakah account to ensure it is only used as prescribed in the Qur’an 
            </div>
         <div class="">
            <a href="#container">
-            <button class="scroll_to_top donateBtn  bg-red-950 text-white rounded-md py-2 px-7  hover:bg-red-700 transition-all duration-500">
+            <button class="scroll_to_top donateBtn  bg-red-950 text-white rounded-md py-2 px-3 sm:px-7  hover:bg-red-700 transition-all duration-500">
              
               Back To Top
             
@@ -361,8 +352,8 @@ We have a Zakah account to ensure it is only used as prescribed in the Qur’an 
     
 </div>
 <!-- Subscrib for latest news -->
-<form action="#" class="mt-20 px-40  bg-gray-100">
-    <h1 class="text-3xl capitalize text-gray-400">Subscribe for the latest news</h1>
+<form action="#" class="mt-14 sm:mt-20 p-5 md:px-40 lg:mr-48 w-full  bg-gray-100">
+    <h1 class=" text-2xl sm:text-3xl capitalize text-gray-400">Subscribe for the latest news</h1>
     <p class="my-6">Sign up for the latest Nigeria Mosque news. Receive important announcements, regular updates and exclusive content delivered straight to your inbox. (* indicates required field)</p>
     <div class="flex flex-col gap-4">
       <label for="firstname" class="flex flex-col gap-1 text-xl">First Name
@@ -385,11 +376,11 @@ We have a Zakah account to ensure it is only used as prescribed in the Qur’an 
   <!-- Footer -->
   <div class="footer flex flex-col gap-4 justify-center items-center my-10">
     <div class="">
-      <ul class="flex gap-5">
-        <li><a href="contact.html" class="text-xl hover:border-b-2 border-red-800">Contact Us</a></li>
-        <li><a href="terms&condition.html" class="text-xl hover:border-b-2 border-red-800">Terms & Condition</a></li>
-        <li><a href="privacy.html" class="text-xl hover:border-b-2 border-red-800">Privacy & policy</a></li>
-        <li><a href="login.html"class="text-xl hover:border-b-2 border-red-800">Login</a></li>
+      <ul class="flex gap-2 sm:gap-5 ">
+        <li><a href="conatct.html" class="text-sm sm:text-xl hover:border-b-2 border-red-800">Contact Us</a></li>
+        <li><a href="terms&condition.html" class="text-sm sm:text-xl hover:border-b-2 border-red-800">Terms & Condition</a></li>
+        <li><a href="privacy.html" class="text-sm sm:text-xl hover:border-b-2 border-red-800">Privacy & policy</a></li>
+        <li><a href="login.html"class="text-sm sm:text-xl hover:border-b-2 border-red-800">Login</a></li>
       </ul>
     </div>
     <p> The East London Mosque Trust is a charity (1122613) and a company limited by guarantee (468317) registered in England & Wales.</p>
