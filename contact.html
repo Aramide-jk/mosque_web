@@ -12,30 +12,30 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-
-
   <script defer src="src/contact.js"></script>
+  <script defer src="src/app.js"></script>
+
 
 </head>
 <body class="gray-50">
 
-     <!-- Header -->
-     <div class="header  grid grid-cols-[1fr] sm:grid-cols-[2fr,1.5fr]  lg:grid-cols-[5fr,2.5fr] auto-rows-auto mx-3 lg:mx-32">
+      <!-- Header -->
+      <div
+      class="header  grid grid-cols-[1fr] sm:grid-cols-[2fr,1.5fr]  lg:grid-cols-[5fr,2.5fr] auto-rows-auto mx-3 lg:mx-32">
       <div class="logo flex items-center  my-3 lg:items-center ">
         <a href="index.html">
           <!-- <img src="img-src/logo.jpg" height="100px" width="100px" alt="" /> -->
           <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque
         </a>
-  
+
       </div>
 
-      <div class="rightHeader mt-3 mx-0 md:mx-3">
-        <div class="calendar">
-          <div class="flex sm:block">
-            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Full Timetable &</a><br />
-            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Calendar</a>
+      <div class="rightHeader mt-3 mx-0 md:mx-3  ">
+        <div class="calendar mb-3 text-center">
+          <div class="flex flex-col md:flex-row gap-y-1 md:block">
+            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400 date text-sm text-gray-500"></a>
+            <div class="times grid grid-cols-5 gap-3"></div>
           </div>
-          <div class="border w-full my-3">Calendar API</div>
         </div>
         <div class="socialMedia flex gap-2 ">
           <div class="inputs relative hidden md:block">
@@ -59,24 +59,22 @@
               <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
                   class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
             </div>
-            <div id="menu_btn" class="ml-auto"><i class="fa-solid fa-bars  bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500 block cursor-pointer sm:hidden"></i></div>
+            <div id="menu_btn" class="ml-auto"><i
+                class="fa-solid fa-bars  bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500 block cursor-pointer sm:hidden"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  
-      <!-- Navbar -->
-      <div class="navs pb-6 hidden sm:block z-10 absolute w-full">
-        <ul
-          class="nav flex flex-col items-center justify-center uppercase text-center gap-1 sm:gap-5  sm:flex-row gap-y- relative bg-slate-50 bg-opacity-70 z-10 p-4"
-        >
-          <li class="relative group hover:text-red-500">
-            <a
-              href="current_appeal.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >Support Us</a
-            >
-            <!-- <ul
+
+    <!-- Navbar -->
+    <div class="navs pb-6 hidden sm:block z-10 absolute w-full">
+      <ul
+        class="nav flex flex-col items-center justify-center uppercase text-center gap-1 sm:gap-5  sm:flex-row gap-y- relative bg-slate-50/90 z-10 p-4">
+        <li class="relative group hover:text-red-500">
+          <a href="current_appeal.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Support Us</a>
+          <!-- <ul
               class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4 transition-all duration-500"
             >
               <li>
@@ -94,14 +92,11 @@
                 >
               </li>
             </ul> -->
-          </li>
-          <li class="relative group hover:text-red-500">
-            <a
-              href="news.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >News</a
-            >
-            <!-- <ul
+        </li>
+        <li class="relative group hover:text-red-500">
+          <a href="news.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">News</a>
+          <!-- <ul
               class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4"
             >
               <li>
@@ -133,38 +128,26 @@
                 >
               </li>
             </ul> -->
-          </li>
-          <li class="hover:text-red-500">
-            <a
-              href="event.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >Events</a
-            >
-          </li>
-          <!-- <li><a href="#">Audio and video</a></li> -->
-          <li class="hover:text-red-500">
-            <a
-              href="about_us.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >about Us</a
-            >
-          </li>
-          <li class="hover:text-red-500">
-            <a
-              href="donate.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >Donate</a
-            >
-          </li>
-          <li class="hover:text-red-500">
-            <a
-              href="contact.html"
-              class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
-      </div>
+        </li>
+        <li class="hover:text-red-500">
+          <a href="event.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Events</a>
+        </li>
+        <!-- <li><a href="#">Audio and video</a></li> -->
+        <li class="hover:text-red-500">
+          <a href="about_us.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">about Us</a>
+        </li>
+        <li class="hover:text-red-500">
+          <a href="donate.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Donate</a>
+        </li>
+        <li class="hover:text-red-500">
+          <a href="contact.html"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Contact Us</a>
+        </li>
+      </ul>
+    </div>
     
       <div class="bg-[url('/img-src/pexels-mloky96-36704.jpg')] bg-cover bg-center h-[15rem]  sm:h-[26rem] w-full mt-[3.5rem]">
         <div class="overlay"><h1 class="text-[1rem] sm:text-[2rem] md:text-[3xl] md:ml-20 font-semibold text-white relative ml-10 top-36 sm:top-56 ">Contact-Us</h1>

@@ -1,7 +1,9 @@
 const one_of = document.getElementById("one");
 const regular = document.getElementById("regular");
 const donation = document.getElementById("preffered_date");
-const payment = document.getElementById("payment_method", "hidden");
+const payment = document.getElementById("payment_method");
+
+
 // const profile=getElementById("your_profile");
 const address = document.getElementById("your_address");
 
@@ -15,10 +17,7 @@ for (let i = 1; i <= 28; i++) {
 }
 
 
-////////////////////////////////
-
-
-// country
+///////////////////////////////
 // Get the select element
 const countrySelect = document.getElementById("country-select");
 
@@ -52,7 +51,6 @@ regular.addEventListener("click", () => {
   // address.classList.remove("hidden")
   address.classList.remove("hidden");
 });
-
 
 
 // keeping intouch

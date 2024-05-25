@@ -13,142 +13,141 @@
     />
     <link rel="stylesheet" href="src/output.css" />
     <script defer src="src/complete_payment.js"></script>
+    <script defer src="src/app.js"></script>
+
   </head>
   <body>
-    <!-- Header -->
-    <div
-    class="header  grid grid-cols-[1fr] sm:grid-cols-[2fr,1.5fr]  lg:grid-cols-[5fr,2.5fr] auto-rows-auto mx-3 lg:mx-32">
-    <div class="logo flex items-center  my-3 lg:items-center ">
-      <a href="index.html">
-        <!-- <img src="img-src/logo.jpg" height="100px" width="100px" alt="" /> -->
-        <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque
-      </a>
+     <!-- Header -->
+     <div
+     class="header  grid grid-cols-[1fr] sm:grid-cols-[2fr,1.5fr]  lg:grid-cols-[5fr,2.5fr] auto-rows-auto mx-3 lg:mx-32">
+     <div class="logo flex items-center  my-3 lg:items-center ">
+       <a href="index.html">
+         <!-- <img src="img-src/logo.jpg" height="100px" width="100px" alt="" /> -->
+         <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque
+       </a>
 
-    </div>
+     </div>
 
-    <div class="rightHeader mt-3 mx-0 md:mx-3">
-      <div class="calendar">
-        <div class="flex sm:block">
-          <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Full
-            Timetable &</a><br />
-          <a href="#"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Calendar</a>
-        </div>
-        <div class="border w-full my-3">Calendar API</div>
-      </div>
-      <div class="socialMedia flex gap-2 ">
-        <div class="inputs relative hidden md:block">
-          <input type="text" class="input border px-1 py-1 rounded-md focus:border-red-900 outline-none"
-            placeholder="Search" />
-          <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-              class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500 "></i></a>
-        </div>
-        <!-- <a href="../src/pages/donate/index.html"
-            class="donateBtn bg-red-950 px-4 pt-1 text-white rounded-md hover:bg-red-900 transition-all duration-500">Donate</a> -->
-        <div class="medias flex gap-2 mb-5  text-white w-full">
-          <div>
-            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-700 transition-all duration-500"></i></a>
-          </div>
-          <div>
-            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
-          </div>
-          <div>
-            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
-          </div>
-          <div id="menu_btn" class="ml-auto"><i
-              class="fa-solid fa-bars  bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500 block cursor-pointer sm:hidden"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+     <div class="rightHeader mt-3 mx-0 md:mx-3  ">
+       <div class="calendar mb-3 text-center">
+         <div class="flex flex-col md:flex-row gap-y-1 md:block">
+           <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400 date text-sm text-gray-500"></a>
+           <div class="times grid grid-cols-5 gap-3"></div>
+         </div>
+       </div>
+       <div class="socialMedia flex gap-2 ">
+         <div class="inputs relative hidden md:block">
+           <input type="text" class="input border px-1 py-1 rounded-md focus:border-red-900 outline-none"
+             placeholder="Search" />
+           <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+               class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500 "></i></a>
+         </div>
+         <!-- <a href="../src/pages/donate/index.html"
+           class="donateBtn bg-red-950 px-4 pt-1 text-white rounded-md hover:bg-red-900 transition-all duration-500">Donate</a> -->
+         <div class="medias flex gap-2 mb-5  text-white w-full">
+           <div>
+             <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                 class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-700 transition-all duration-500"></i></a>
+           </div>
+           <div>
+             <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                 class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
+           </div>
+           <div>
+             <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                 class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
+           </div>
+           <div id="menu_btn" class="ml-auto"><i
+               class="fa-solid fa-bars  bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500 block cursor-pointer sm:hidden"></i>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
 
-  <!-- Navbar -->
-  <div class="navs pb-6 hidden sm:block z-10 absolute w-full">
-    <ul
-      class="nav flex flex-col items-center justify-center uppercase text-center gap-1 sm:gap-5  sm:flex-row gap-y- relative bg-slate-50 bg-opacity-70 z-10 p-4">
-      <li class="relative group hover:text-red-500">
-        <a href="current_appeal.html"
-          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Support Us</a>
-        <!-- <ul
-              class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4 transition-all duration-500"
-            >
-              <li>
-                <a
-                  href="current_appeal.html"
-                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                  >Current Appeals</a
-                >
-              </li>
-              <li>
-                <a
-                  href="donation_usage"
-                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                  >How Use Your Donations</a
-                >
-              </li>
-            </ul> -->
-      </li>
-      <li class="relative group hover:text-red-500">
-        <a href="news.html"
-          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">News</a>
-        <!-- <ul
-              class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                  >NEWS</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                  >ABOUT ISLAM</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                  >FROM THE IMAM'S DESK</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                  >LEADERSHIP IN THE COMMUNITY</a
-                >
-              </li>
-            </ul> -->
-      </li>
-      <li class="hover:text-red-500">
-        <a href="event.html"
-          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Events</a>
-      </li>
-      <!-- <li><a href="#">Audio and video</a></li> -->
-      <li class="hover:text-red-500">
-        <a href="about_us.html"
-          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">about Us</a>
-      </li>
-      <li class="hover:text-red-500">
-        <a href="donate.html"
-          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Donate</a>
-      </li>
-      <li class="hover:text-red-500">
-        <a href="contact.html"
-          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Contact Us</a>
-      </li>
-    </ul>
-  </div>
+   <!-- Navbar -->
+   <div class="navs pb-6 hidden sm:block z-10 absolute w-full">
+     <ul
+       class="nav flex flex-col items-center justify-center uppercase text-center gap-1 sm:gap-5  sm:flex-row gap-y- relative bg-slate-50/90 z-10 p-4">
+       <li class="relative group hover:text-red-500">
+         <a href="current_appeal.html"
+           class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Support Us</a>
+         <!-- <ul
+             class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4 transition-all duration-500"
+           >
+             <li>
+               <a
+                 href="current_appeal.html"
+                 class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                 >Current Appeals</a
+               >
+             </li>
+             <li>
+               <a
+                 href="donation_usage"
+                 class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                 >How Use Your Donations</a
+               >
+             </li>
+           </ul> -->
+       </li>
+       <li class="relative group hover:text-red-500">
+         <a href="news.html"
+           class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">News</a>
+         <!-- <ul
+             class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4"
+           >
+             <li>
+               <a
+                 href="#"
+                 class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                 >NEWS</a
+               >
+             </li>
+             <li>
+               <a
+                 href="#"
+                 class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                 >ABOUT ISLAM</a
+               >
+             </li>
+             <li>
+               <a
+                 href="#"
+                 class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                 >FROM THE IMAM'S DESK</a
+               >
+             </li>
+             <li>
+               <a
+                 href="#"
+                 class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                 >LEADERSHIP IN THE COMMUNITY</a
+               >
+             </li>
+           </ul> -->
+       </li>
+       <li class="hover:text-red-500">
+         <a href="event.html"
+           class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Events</a>
+       </li>
+       <!-- <li><a href="#">Audio and video</a></li> -->
+       <li class="hover:text-red-500">
+         <a href="about_us.html"
+           class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">about Us</a>
+       </li>
+       <li class="hover:text-red-500">
+         <a href="donate.html"
+           class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Donate</a>
+       </li>
+       <li class="hover:text-red-500">
+         <a href="contact.html"
+           class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Contact Us</a>
+       </li>
+     </ul>
+   </div>
 
-    <div class=" md:mx-32">
+    <div class=" md:mx-32 md:mt-16">
       <h1 class="mx-5 text-2xl my-6">Complete Your Payment</h1>
       <p class="mx-5">Please enter your card details to complete your donation</p>
 
@@ -277,7 +276,7 @@
         </form>
       </fieldset>
 
-    <div class="w-full px-5 md:w-7/12 mx-auto pb-12 md:pb-20">
+    <div class="w-full px-5 mx-auto pb-12 md:pb-20">
       <div class="mb-12">
         <a href="complete_payment.html"
           class="donateBtn bg-red-950 text-white rounded-md py-2 px-5 text-lg md:px-9 font-semibold md:text-2xl hover:bg-red-800 trasition duration-500">

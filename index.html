@@ -31,9 +31,9 @@
 
       </div>
 
-      <div class="rightHeader mt-3 mx-0 md:mx-3">
-        <div class="calendar mb-3">
-          <div class="flex flex-col md:flex-row gap-y-1">
+      <div class="rightHeader mt-3 mx-0 md:mx-3  ">
+        <div class="calendar mb-3 text-center">
+          <div class="flex flex-col md:flex-row gap-y-1 md:block">
             <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400 date text-sm text-gray-500"></a>
             <div class="times grid grid-cols-5 gap-3"></div>
           </div>
@@ -71,7 +71,7 @@
     <!-- Navbar -->
     <div class="navs pb-6 hidden sm:block z-10 absolute w-full">
       <ul
-        class="nav flex flex-col items-center justify-center uppercase text-center gap-1 sm:gap-5  sm:flex-row gap-y- relative bg-slate-50 bg-opacity-70 z-10 p-4">
+        class="nav flex flex-col items-center justify-center uppercase text-center gap-1 sm:gap-5  sm:flex-row gap-y- relative bg-slate-50/90 z-10 p-4">
         <li class="relative group hover:text-red-500">
           <a href="current_appeal.html"
             class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Support Us</a>
@@ -230,23 +230,20 @@
       <div class="grid latestNews self-stretch  justify-center">
         <h1 class="text-2xl sm:text-3xl lg:text-3xl font-bold mb-6 ">Latest News & Feautures</h1>
         <div
-          class="latestNewsBanner bg-[url('../img-src/istockphoto-1404962407-1024x1024.jpg')] h-[30vh] bg-cover bg-center  flex items-center p-6 mb-8">
-          <div class="flex flex-col justify-center text-white">
+          class="latestNewsBanner h-48 md:h-[30vh] bg-cover bg-center  p-6 mb-8 relative">
+          <img src="../img-src/istockphoto-1404962407-1024x1024.jpg" alt="" class="md:absolute border left-0 top-0 h-36 md:h-full w-full object-cover object-center">
+          <div class="flex flex-col justify-center text-white relative z-10">
             <a href="#">
-              <p class=" mt-[15rem] -ml-[1.5rem] sm:hidden  text-red-800 text-lg md:text-2xl">Volunteer For Mosque</p>
+              <h1 class="md:font-bold  sm:text-xl text-lg sm:mb-3  sm:block text-red-900 md:text-white ">Volunteer For Mosque</h1>
             </a>
-
-            <a href="#">
-              <h1 class="font-bold  sm:text-xl text-lg sm:mb-3 hidden sm:block">Volunteer For Mosque</h1>
-            </a>
-            <p class="text-[1rem] hidden sm:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, vitae.
+            <p class="text-[1rem] sm:block hidden md:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, vitae.
               Consequatur sequi commodi minima
               labore nihil ipsum ipsa ex voluptates.</p>
           </div>
         </div>
 
         <div class="quranJournalWrapper text-red-800 text-2xl md:text-2xl ">
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 ">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 mt-2">
             <div class="quranJournal">
               <a href="#">
                 <img src="/img-src/pexels-aqtai-2233399.jpg" class="h-36 w-full">
@@ -265,7 +262,7 @@
       </div>
 
 
-      <div class="grid latestUpdates self-start">
+      <div class="grid latestUpdates self-start mt-5 md:mt-0">
         <h1 class="text-2xl md:text-3xl font-bold mb-6">Updates</h1>
         <div class="updateswrap flex flex-col sm:gap-8 gap-3 text-red-800 lg:text-2xl text-lg">
           <div class="update">
