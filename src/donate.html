@@ -1,684 +1,445 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donate</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="/src/output.css" />
-    <script defer src="donate.js"></script>
-  </head>
-  <body class="bg-gray-50">
 
-     <!-- Header -->
-     <div class="header  grid grid-cols-[1fr] sm:grid-cols-[2fr,1.5fr]  lg:grid-cols-[5fr,2.5fr] auto-rows-auto mx-3 lg:mx-32">
-      <div class="logo flex items-center  my-3 lg:items-center ">
-        <a href="home.html">
-          <!-- <img src="../img-src/logo.jpg" height="100px" width="100px" alt="" /> -->
-          <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque
-        </a>
-  
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/src/output.css" />
+  <script defer src="donate.js"></script>
+</head>
 
-      <div class="rightHeader mt-3 mx-0 md:mx-3">
-        <div class="calendar">
-          <div class="flex sm:block">
-            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Full Timetable &</a><br />
-            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Calendar</a>
-          </div>
-          <div class="border w-full my-3">Calendar API</div>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <div
+    class="header  grid grid-cols-[1fr] sm:grid-cols-[2fr,1.5fr]  lg:grid-cols-[5fr,2.5fr] auto-rows-auto mx-3 lg:mx-32">
+    <div class="logo flex items-center  my-3 lg:items-center ">
+      <a href="home.html">
+        <!-- <img src="../img-src/logo.jpg" height="100px" width="100px" alt="" /> -->
+        <p class="name text-3xl ml-5 font-semibold">AL-ibadah mosque
+      </a>
+
+    </div>
+
+    <div class="rightHeader mt-3 mx-0 md:mx-3">
+      <div class="calendar">
+        <div class="flex sm:block">
+          <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Full
+            Timetable &</a><br />
+          <a href="#"
+            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Calendar</a>
         </div>
-        <div class="socialMedia flex gap-2 ">
-          <div class="inputs relative hidden md:block">
-            <input type="text" class="input border px-1 py-1 rounded-md focus:border-red-900 outline-none"
-              placeholder="Search" />
-            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500 "></i></a>
-          </div>
-          <!-- <a href="../src/pages/donate/index.html"
+        <div class="border w-full my-3">Calendar API</div>
+      </div>
+      <div class="socialMedia flex gap-2 ">
+        <div class="inputs relative hidden md:block">
+          <input type="text" class="input border px-1 py-1 rounded-md focus:border-red-900 outline-none"
+            placeholder="Search" />
+          <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+              class="searchIcon fa-solid fa-magnifying-glass absolute right-1 top-1 text-lg text-gray-500 "></i></a>
+        </div>
+        <!-- <a href="../src/pages/donate/index.html"
             class="donateBtn bg-red-950 px-4 pt-1 text-white rounded-md hover:bg-red-900 transition-all duration-500">Donate</a> -->
-          <div class="medias flex gap-2 mb-5  text-white w-full">
-            <div>
-              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                  class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-700 transition-all duration-500"></i></a>
-            </div>
-            <div>
-              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                  class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
-            </div>
-            <div>
-              <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
-                  class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
-            </div>
-            <div id="menu_btn" class="ml-auto"><i class="fa-solid fa-bars  bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500 block cursor-pointer sm:hidden"></i></div>
+        <div class="medias flex gap-2 mb-5  text-white w-full">
+          <div>
+            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                class="fa-brands fa-instagram bg-red-950 py-2 px-2 rounded-md hover:bg-red-700 transition-all duration-500"></i></a>
+          </div>
+          <div>
+            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                class="fa-brands fa-facebook bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
+          </div>
+          <div>
+            <a href="#" class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"><i
+                class="fa-brands fa-youtube bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500"></i></a>
+          </div>
+          <div id="menu_btn" class="ml-auto"><i
+              class="fa-solid fa-bars  bg-red-950 rounded-md py-2 px-2 hover:bg-red-700 transition-all duration-500 block cursor-pointer sm:hidden"></i>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Navbar -->
-    <div class="navs pb-6 hidden sm:block z-10 absolute w-full">
-      <ul
-        class="nav flex flex-col items-center justify-center uppercase text-center gap-1 sm:gap-5  sm:flex-row gap-y- relative bg-slate-50 bg-opacity-70 z-10 p-4"
-      >
-        <li class="relative group hover:text-red-500">
-          <a
-            href="current_appeal.html"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-            >Support Us</a
-          >
-          <!-- <ul
-            class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4 transition-all duration-500"
-          >
-            <li>
-              <a
-                href="current_appeal.html"
-                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                >Current Appeals</a
-              >
-            </li>
-            <li>
-              <a
-                href="donation_usage"
-                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                >How Use Your Donations</a
-              >
-            </li>
-          </ul> -->
-        </li>
-        <li class="relative group hover:text-red-500">
-          <a
-            href="news.html"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-            >News</a
-          >
-          <!-- <ul
-            class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4"
-          >
-            <li>
-              <a
-                href="#"
-                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                >NEWS</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                >ABOUT ISLAM</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                >FROM THE IMAM'S DESK</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-                >LEADERSHIP IN THE COMMUNITY</a
-              >
-            </li>
-          </ul> -->
-        </li>
-        <li class="hover:text-red-500">
-          <a
-            href="event.html"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-            >Events</a
-          >
-        </li>
-        <!-- <li><a href="#">Audio and video</a></li> -->
-        <li class="hover:text-red-500">
-          <a
-            href="about_us.html"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-            >about Us</a
-          >
-        </li>
-        <li class="hover:text-red-500">
-          <a
-            href="donate.html"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-            >Donate</a
-          >
-        </li>
-        <li class="hover:text-red-500">
-          <a
-            href="contact.html"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-            >Contact Us</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="my-8 w-full md:w-7/12 md:mx-auto mx-10">
-      <h1 class="font-semibold text-1xl sm:mt-[4rem] sm:text-3xl md:text-5xl capitalize mx-5">Make a donation now</h1>
-      <p class="text-lg my-5 lg:my-10 mx-5">
-        Your contribution will help us to maintain and develop the wide range of
-        services we offer. Prophet Muhammad ﷺ said: “Allah said: ‘Spend, O son
-        of Adam, and I shall spend on you.’
-      </p>
+  <!-- Navbar -->
+  <div class="navs pb-6 hidden sm:block z-10 absolute w-full">
+    <ul
+      class="nav flex flex-col items-center justify-center uppercase text-center gap-1 sm:gap-5  sm:flex-row gap-y- relative bg-slate-50 bg-opacity-70 z-10 p-4">
+      <li class="relative group hover:text-red-500">
+        <a href="current_appeal.html"
+          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Support Us</a>
+        <!-- <ul
+              class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4 transition-all duration-500"
+            >
+              <li>
+                <a
+                  href="current_appeal.html"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >Current Appeals</a
+                >
+              </li>
+              <li>
+                <a
+                  href="donation_usage"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >How Use Your Donations</a
+                >
+              </li>
+            </ul> -->
+      </li>
+      <li class="relative group hover:text-red-500">
+        <a href="news.html"
+          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">News</a>
+        <!-- <ul
+              class="dropDown hidden group-hover:flex flex-col gap-y-3 bg-slate-50 absolute -left-3/4 w-[200px] z-10 p-4"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >NEWS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >ABOUT ISLAM</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >FROM THE IMAM'S DESK</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
+                  >LEADERSHIP IN THE COMMUNITY</a
+                >
+              </li>
+            </ul> -->
+      </li>
+      <li class="hover:text-red-500">
+        <a href="event.html"
+          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Events</a>
+      </li>
+      <!-- <li><a href="#">Audio and video</a></li> -->
+      <li class="hover:text-red-500">
+        <a href="about_us.html"
+          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">about Us</a>
+      </li>
+      <li class="hover:text-red-500">
+        <a href="donate.html"
+          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Donate</a>
+      </li>
+      <li class="hover:text-red-500">
+        <a href="contact.html"
+          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Contact Us</a>
+      </li>
+    </ul>
+  </div>
 
-      <form action="#" class="flex flex-col items-center mb-8">
+  <div class="my-8 w-full md:w-7/12 md:mx-auto">
+    <h1 class="font-semibold text-1xl sm:mt-[4rem] sm:text-3xl md:text-5xl capitalize mx-5">Make a donation now</h1>
+    <p class="text-lg my-5  mx-5">
+      Your contribution will help us to maintain and develop the wide range of
+      services we offer. Prophet Muhammad ﷺ said: “Allah said: ‘Spend, O son
+      of Adam, and I shall spend on you.’
+    </p>
+
+    <form action="#" class="flex flex-col items-center mb-8 p-5">
+      <div
+        class="progress flex gap-4 items-cente bg-slate-100 w-full justify-center items-center my-6 p-7 rounded-md text-lg">
+        <div class="step1 text-center flex items-center justify-center flex-col text-green-700">
+          <i class="fa-solid fa-chevron-down border rounded-s-md p-2 bg-green-700 text-slate-100"></i>
+          <p>Step One</p>
+        </div>
+        <div class="border border-red-500 w-12 h-px my-auto"></div>
+
+        <div class="step2 text-center flex items-center justify-center flex-col">
+          <i class="fa-solid fa-chevron-right border rounded-s-md p-2 bg-green-700 text-slate-100"></i>
+          <p>Step Two</p>
+        </div>
+        <div class="border border-red-500 w-10 h-px"></div>
+
+        <div class="step3 text-center flex items-center justify-center flex-col">
+          <i class="fa-solid fa-chevron-right border rounded-s-md p-2 bg-green-700 text-slate-100"></i>
+          <p>Finish</p>
+        </div>
+      </div>
+
+
+      <!-- FiledSet2 -->
+      <fieldset class="border border-gray-300 rounded-md p-10 w-full">
+        <legend class="font-semibold text-2xl">Your Donation</legend>
+        <div class="grid grid-cols-2 gap-x-4 text-center">
+          <label for="one" class="">
+            <input type="radio" id="one" name="amount" value="one" class="peer hidden" />
+            <span id="oneOff"
+              class="peer-checked:bg-red-950 peer-checked:text-white py-5 px- bg-white block w-full rounded-md text-xl border-b-2 hover:border-red-900 cursor-pointer ">One-off</span>
+          </label>
+          <label for="two" class="">
+            <input type="radio" id="two" name="amount" value="two" class="peer hidden" />
+            <span id="regular"
+              class="peer-checked:bg-red-950 peer-checked:text-white py-5 px- bg-white block w-full rounded-md text-xl border-b-2 hover:border-red-900 cursor-pointer">Regular</span>
+          </label>
+        </div>
+
+        <div class="amount mt-8 md:mt-16 grid grid-cols-3 gap-4 text-center">
+          <label for="10" class="w-full block">
+            <input type="radio" id="10" name="amount" value="10" class="peer hidden" />
+            <span
+              class="peer-checked:bg-red-950 peer-checked:text-white bg-white rounded-md text-2xl font-semibold w-full block py-7 border-b-2 hover:border-red-900 cursor-pointer">10</span>
+          </label>
+          <label for="20">
+            <input type="radio" id="20" name="amount" value="20" class="peer hidden" />
+            <span
+              class="peer-checked:bg-red-950 peer-checked:text-white bg-white rounded-md text-2xl font-semibold w-full block py-7 border-b-2 hover:border-red-900 cursor-pointer">20</span>
+          </label>
+          <label for="30">
+            <input type="radio" id="30" name="amount" value="30" class="peer hidden" />
+            <span
+              class="peer-checked:bg-red-950 peer-checked:text-white w-full block bg-white rounded-md text-2xl font-semibold py-7 border-b-2 hover:border-red-900 cursor-pointer">30</span>
+          </label>
+        </div>
         <div
-          class="progress flex gap-4 items-cente bg-slate-100 w-full justify-center items-center my-6 p-7 rounded-md text-lg"
-        >
-          <div
-            class="step1 text-center flex items-center justify-center flex-col text-green-700"
-          >
-            <i
-              class="fa-solid fa-chevron-down border rounded-s-md p-2 bg-green-700 text-slate-100"
-            ></i>
-            <p>Step One</p>
-          </div>
-          <div class="border border-red-500 w-12 h-px my-auto"></div>
+          class="other border text-center rounded-sm flex gap-x-8 mt-8 md:mt-16 bg-slate-100 items-center focus:bg-red-900">
+          <p class="font-semibold text-xl flex-1 ml-3">Other</p>
+          <input type="number" name="" id=""
+            class="input bg-white w-full py-4 px-6 border outline-none text-2xl focus:border-2 focus:border-t-red-800 focus:border-y-red-800" />
+        </div>
 
-          <div
-            class="step2 text-center flex items-center justify-center flex-col"
-          >
-            <i
-              class="fa-solid fa-chevron-right border rounded-s-md p-2 bg-green-700 text-slate-100"
-            ></i>
-            <p>Step Two</p>
+        <div id="preffered_date" class="oftenDonation py-3 px-3 bg-red-950 mt-3 text-white hidden">
+          <div class="month">
+            <label for="months" class="flex justify-between">
+              <p>How often would you like to donate?</p>
+              <select name="monthsSelection" id="months" class="w-6/12 p-3 text-black rounded-md">
+                <option value="Monthly">Monthly</option>
+                <option value="Quarterly">Quarterly</option>
+                <option value="Yearly">Yearly</option>
+              </select>
+            </label>
           </div>
-          <div class="border border-red-500 w-10 h-px"></div>
-
-          <div
-            class="step3 text-center flex items-center justify-center flex-col"
-          >
-            <i
-              class="fa-solid fa-chevron-right border rounded-s-md p-2 bg-green-700 text-slate-100"
-            ></i>
-            <p>Finish</p>
+          <div class="day">
+            <label for="days" class="flex justify-between">
+              Preferred collection day
+              <select name="daySection" id="option-container" class="p-3 w-6/12 mt-3 text-black rounded-md">
+                <option value="1st"></option>
+              </select>
+            </label>
           </div>
         </div>
-        
+      </fieldset>
 
-        <!-- FiledSet2 -->
-        <fieldset class="border border-gray-300 rounded-md p-10 w-full">
-          <legend class="font-semibold text-3xl">Your Donation</legend>
-          <div class="grid grid-cols-2 gap-1 text-center">
-            <label for="one" class="">
-              <input
-                type="radio"
-                id="one"
-                name="amount"
-                value="one"
-                class="peer hidden"
-              />
-              <span id="oneOff"
-              class="peer-checked:bg-red-950 peer-checked:text-white py-5 px- bg-white block w-full rounded-md text-xl border-b-2 hover:border-red-900 cursor-pointer "
-                >One-off</span  
-              >
-            </label>
-            <label for="two" class="">
-              <input
-                type="radio"
-                id="two"
-                name="amount"
-                value="two"
-                class="peer hidden"
-              />
-              <span id="regular"
-                class="peer-checked:bg-red-950 peer-checked:text-white py-5 px- bg-white block w-full rounded-md text-xl border-b-2 hover:border-red-900 cursor-pointer"
-                >Regular</span
-              >
-            </label>
-          </div>
+      <!-- Filedse2 -->
+      <fieldset id="payment_method" class="border border-gray-300 rounded-md grid grid-cols-2 w-full gap-3 p-10 my-6">
+        <legend class="font-semibold text-2xl">Payment Method</legend>
 
-          <div class="amount mt-16 grid grid-cols-3 gap-1 text-center">
-            <label for="10" class="w-full block">
-              <input
-                type="radio"
-                id="10"
-                name="amount"
-                value="10"
-                class="peer hidden"
-              />
-              <span
-                class="peer-checked:bg-red-950 peer-checked:text-white bg-white rounded-md text-3xl font-semibold w-full block py-7 border-b-2 hover:border-red-900 cursor-pointer"
-                >10</span
-              >
-            </label>
-            <label for="20">
-              <input
-                type="radio"
-                id="20"
-                name="amount"
-                value="20"
-                class="peer hidden"
-              />
-              <span
-                class="peer-checked:bg-red-950 peer-checked:text-white bg-white rounded-md text-3xl font-semibold w-full block py-7 border-b-2 hover:border-red-900 cursor-pointer"
-                >20</span
-              >
-            </label>
-            <label for="30">
-              <input
-                type="radio"
-                id="30"
-                name="amount"
-                value="30"
-                class="peer hidden"
-              />
-              <span
-                class="peer-checked:bg-red-950 peer-checked:text-white w-full block bg-white rounded-md text-3xl font-semibold py-7 border-b-2 hover:border-red-900 cursor-pointer"
-                >30</span
-              >
-            </label>
-          </div>
-          <div
-            class="other border text-center rounded-sm flex gap-x-8 mt-12 bg-slate-100 items-center focus:bg-red-900"
-          >
-            <p class="font-semibold text-3xl flex-1 ml-3">Other</p>
-            <input
-              type="number"
-              name=""
-              id=""
-              class="input bg-white w-full py-8 border outline-none text-3xl focus:border-2 focus:border-t-red-800 focus:border-y-red-800"
-            />
-          </div>
+        <label for="img1" class="">
+          <input type="radio" id="img1" name="amount" value="img1" class="peer hidden" />
+          <span id="img1"
+            class="peer-checked:bg-red-950 peer-checked:text-white py-5 px- bg-white block w-full rounded-md text-xl border-b-2 hover:border-red-900 cursor-pointer"><img
+              src="/img-src/visa.jpg" class="w-full h-full border-2 hover:border-red-900 cursor-pointer" alt=""></span>
+        </label>
+        <label for="img2" class="">
+          <input type="radio" id="img2" name="amount" value="one" class="peer hidden" />
+          <span id="img2"
+            class="peer-checked:bg-red-950 peer-checked:text-white py-5 px- bg-white block w-full rounded-md text-xl border-b-2 hover:border-red-900 cursor-pointer"><img
+              src="/img-src/palm.jpg" class="w-full h-full border-2 hover:border-red-900 cursor-pointer" alt=""></span>
+        </label>
 
-          <div id="preffered_date" class="oftenDonation py-3 px-3 bg-red-950 mt-3 text-white hidden">
-            <div class="month">
-              <label for="months" class="flex justify-between">
-                <p>How often would you like to donate?</p>
-                <select
-                  name="monthsSelection"
-                  id="months"
-                  class="w-6/12 p-3 text-black rounded-md"
-                >
-                  <option value="Monthly">Monthly</option>
-                  <option value="Quarterly">Quarterly</option>
-                  <option value="Yearly">Yearly</option>
-                </select>
-              </label>
-            </div>
-            <div class="day">
-              <label for="days" class="flex justify-between">
-                Preferred collection day
-                <select
-                  name="daySection"
-                  id="option-container"
-                  class="p-3 w-6/12 mt-3 text-black rounded-md"
-                >
-                  <option value="1st"></option>
-                </select>
-              </label>
-            </div>
-          </div>
-        </fieldset>
 
-        <!-- Filedse2 -->
-        <fieldset id="payment_method"
-          class="border border-gray-300 rounded-md grid grid-cols-2 w-full gap-3 p-10 my-3"
-        >
-          <legend class="font-semibold text-3xl">Payment Method</legend>
-
-          <label for="img1" class="">
-            <input
-              type="radio"
-              id="img1"
-              name="amount"
-              value="img1"
-              class="peer hidden"
-            />
-            <span id="img1"
-            class="peer-checked:bg-red-950 peer-checked:text-white py-5 px- bg-white block w-full rounded-md text-xl border-b-2 hover:border-red-900 cursor-pointer"
-              ><img src="/img-src/visa.jpg" class="w-full h-full border-2 hover:border-red-900 cursor-pointer" alt=""></span  
-            >
-          </label>
-          <label for="img2" class="">
-            <input
-              type="radio"
-              id="img2"
-              name="amount"
-              value="one"
-              class="peer hidden"
-            />
-            <span id="img2"
-            class="peer-checked:bg-red-950 peer-checked:text-white py-5 px- bg-white block w-full rounded-md text-xl border-b-2 hover:border-red-900 cursor-pointer"
-              ><img src="/img-src/palm.jpg" class="w-full h-full border-2 hover:border-red-900 cursor-pointer" alt=""></span  
-            >
-          </label>
-
-          
-          <!-- <div class="border-2 cursor-pointer">
+        <!-- <div class="border-2 cursor-pointer">
               <input type="radio" name="image" id="imag2" class="peer hidden"> -->
 
-          <!-- <img src="/img-src/visa3.gif" class="w-full h-36 peer-checked:border-red-700 py-3 px-8 bg-white rounded-md"  alt=""> -->
-        </fieldset>
+        <!-- <img src="/img-src/visa3.gif" class="w-full h-36 peer-checked:border-red-700 py-3 px-8 bg-white rounded-md"  alt=""> -->
+      </fieldset>
 
-        <!-- Filedset3 -->
-        <fieldset class="border border-gray-300 p-5 md:p-10 w-full">
-          <legend class="font-semibold text-lg md:text-3xl">About you</legend>
-          <div class="">
-            <div id="your_profile">
-            <label for="why" class="flex sm:flex justify-between"
-              >Why are you donating?
-              <select
-                name="text"
-                id="why"
-                class="w-7/12 p-2 text-black rounded-md focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
-              >
-                <option value=""></option>
-                <option value="">I received a latter</option>
-                <option value="">I received a latter</option>
-                <option value="">I received a latter</option>
-                <option value="">I received a latter</option>
-              </select>
-            </label>
+      <!-- Filedset3 -->
+      <fieldset class="border border-gray-300 p-5 md:p-10 w-full">
+        <legend class="font-semibold text-lg md:text-3xl">About you</legend>
+        <div id="your_profile" class="flex flex-col gap-y-6">
+          <label for="why" class="flex flex-col md:flex-row gap-y-3 justify-between">Why are you donating?
+            <select name="text" id="why"
+              class="md:w-7/12 w-full p-2 text-black rounded-md focus:border-y-2 outline-none border-t-red-700 border-b-red-700">
+              <option value=""></option>
+              <option value="">I received a latter</option>
+              <option value="">I received a latter</option>
+              <option value="">I received a latter</option>
+              <option value="">I received a latter</option>
+            </select>
+          </label>
 
-            <label
-              for="why"
-              class="flex justify-between p-3 text-black rounded-md"
-              >Title
-              <select
-                name="text"
-                id="why"
-                class="w-7/12 p-2 text-black rounded-md focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
-              >
-                <option value=""></option>
-                <option value="">Mr</option>
-                <option value="">Mrs</option>
-                <option value="">Dr</option>
-                <option value="">miss</option>
-              </select>
-            </label>
-            <div class="names">
-              <label
-                for="firstname"
-                class="flex justify-between p-3 text-black rounded-md"
-              >
-                First name
-                <input
-                  type="text"
-                  name="firstname"
-                  id="firstname"
-                  class="mb-4 w-7/12 p-3 text-black rounded-md focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
-                />
-              </label>
+          <label for="why" class="flex flex-col md:flex-row gap-y-3 justify-between">Title
+            <select name="text" id="why"
+              class="md:w-7/12  w-full p-2 text-black rounded-md focus:border-y-2 outline-none border-t-red-700 border-b-red-700">
+              <option value=""></option>
+              <option value="">Mr</option>
+              <option value="">Mrs</option>
+              <option value="">Dr</option>
+              <option value="">miss</option>
+            </select>
+          </label>
+          <label for="firstname" class="flex flex-col md:flex-row gap-y-3 justify-between  text-black rounded-md">
+            First name
+            <input type="text" name="firstname" id="firstname"
+              class=" md:w-7/12  w-full p-3 text-black rounded-md focus:border-y-2 outline-none border-t-red-700 border-b-red-700" />
+          </label>
 
-              <label
-                for="lastname"
-                class="flex justify-between p-3 text-black rounded-md"
-              >
-                Last name
-                <input
-                  type="text"
-                  name="lastname"
-                  id="lastname"
-                  class="w-7/12 p-3 text-black rounded-md focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
-                />
-              </label>
-            </div>
+          <label for="lastname" class="flex flex-col md:flex-row gap-y-3 justify-between  text-black rounded-md">
+            Last name
+            <input type="text" name="lastname" id="lastname"
+              class="md:w-7/12  w-full p-3 text-black rounded-md focus:border-y-2 outline-none border-t-red-700 border-b-red-700" />
+          </label>
 
-            <div class="checkbox flex justify-end mr-8">
+          <div class="checkbox flex justify-between ">
+            <div>&nbsp;</div>
+            <div class="md:w-7/12  w-full">
               <input type="checkbox" name="" id="check" class="mr-2" />
-              <label for="check"
-                >Display your name with your donation on our site</label
-              >
+              <label for="check">Display your name with your donation on our site</label>
             </div>
-            <label
-              for="email"
-              class="flex justify-between p-3 text-black rounded-md"
-            >
-              Email
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="w-7/12 text-black rounded-md p-3 focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
-              />
+
+          </div>
+          <label for="email" class="flex flex-col md:flex-row gap-y-3 justify-between text-black rounded-md">
+            Email
+            <input type="email" name="email" id="email"
+              class="md:w-7/12  w-full text-black rounded-md p-3 focus:border-y-2 outline-none border-t-red-700 border-b-red-700" />
+          </label>
+        </div>
+
+        <div id="your_address" class="hidden mt-6">
+          <div class="flex flex-col gap-y-6">
+
+            <label for="email" class="flex flex-col md:flex-row gap-y-3 justify-between text-black rounded-md">
+              Address line 1
+              <input type="text" name="address" id="address"
+                class="md:w-7/12  w-full text-black rounded-md p-3 focus:border-y-2 outline-none border-t-red-700 border-b-red-700" />
+            </label>
+            <label for="Address2" class="flex  flex-col md:flex-row gap-y-3 justify-between  text-black rounded-md">
+              Address line 2
+              <input type="text" name="Address2" id="Address2"
+                class="md:w-7/12  w-full text-black rounded-md p-3 focus:border-y-2 outline-none border-t-red-700 border-b-red-700" />
+            </label>
+            <label for="town" class="flex flex-col md:flex-row gap-y-3 justify-between text-black rounded-md">
+              Town 0r City
+              <input type="text" name="tow" id="town"
+                class="md:w-7/12  w-full text-black rounded-md p-3 focus:border-y-2 outline-none border-t-red-700 border-b-red-700" />
+            </label>
+            <label for="postal" class="flex flex-col md:flex-row gap-y-3 justify-between text-black rounded-md">
+              Postalcode
+              <input type="number" name="postal" id="postal"
+                class="md:w-7/12  w-full text-black rounded-md p-3 focus:border-y-2 outline-none border-t-red-700 border-b-red-700" />
+            </label>
+            <label for="country-select"
+              class="flex flex-col md:flex-row gap-y-3 justify-between text-black rounded-md">Select a country:
+              <select id="country-select"
+                class="md:w-7/12  w-full text-black rounded-md p-3 focus:border-y-2 outline-none border-t-red-700 border-b-red-700"></select>
             </label>
           </div>
 
-          <div id="your_address" class="hidden">
-            <label
-              for="email"
-              class="flex justify-between p-3 text-black rounded-md"
-            >
-              Address line 1
-              <input
-                type="text"
-                name="address"
-                id="address"
-                class="w-7/12 text-black rounded-md p-3 focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
-              />
+        </div>
+
+
+
+
+        <div class="keepInTouch">
+          <h1>Keeping In Touch</h1>
+          <p>
+            We’d love to keep you posted with our news, activities and how you
+            can help in other ways. We’ll never sell or swap your details with
+            anybody else. You are free to change your mind at any time. Please
+            indicate how you would like to hear from us by using the tick
+            boxes below
+          </p>
+
+          <div class="flex items-center justify-between p-4 bg-gray-100 mt-5">
+            <div class="text-lg rounded-md">By Email</div>
+            <div class="flex space-x-4">
+              <div class="flex">
+                <input id="yes" type="radio" name="yesno" value="yes"
+                  class="h-4 w-4 rounded focus:border-y-2 outline-none border-t-red-700 border-b-red-700" />
+                <label for="yes" class="ml-2 text-sm font-medium text-gray-900">Yes</label>
+              </div>
+              <div class="flex">
+                <input id="no" type="radio" name="yesno" value="no" class="h-4 w-4 border-gray-300 rounded" />
+                <label for="no"
+                  class="ml-2 text-sm font-medium text-gray-900 focus:border-y-2 outline-none border-t-red-700 border-b-red-700">No</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-between p-4 mt-3 bg-gray-100">
+            <div class="text-lg">By Phone</div>
+            <div class="flex space-x-4">
+              <div class="flex">
+                <input id="yes" type="radio" name="yesno" value="yes" class="h-4 w-4 border-gray-300 rounded"
+                  onclick="togglePhoneInput(this)" />
+                <label for="yess" class="ml-2 text-sm font-medium text-gray-900">Yes</label>
+              </div>
+              <div class="flex">
+                <input id="no" type="radio" name="yesno" value="no" class="h-4 w-4 border-gray-300 rounded"
+                  onclick="togglePhoneInput(this)" />
+                <label for="no" class="ml-2 text-sm font-medium text-gray-900">No</label>
+              </div>
+            </div>
+          </div>
+
+          <div id="phone-input-container" class="hidden">
+            <label for="phone-input" class="flex justify-between bg-gray-100 text-lg p-4 text-gray-700">Phone Number
+              <input type="number" id="phone-input"
+                class="mt-1 rounded-md w-4/12 text-black p-3 shadow-sm focus:border-y-2 outline-none border-t-red-700 border-b-red-700 sm:text-sm" />
             </label>
-            <label
-              for="Address2"
-              class="flex justify-between p-3 text-black rounded-md"
-            >
-              Address line 2
-              <input
-                type="text"
-                name="Address2"
-                id="Address2"
-                class="w-7/12 text-black rounded-md p-3 focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
-              />
+          </div>
+          <!-- ////////////////////////// -->
+          <div class="flex justify-between p-4 mt-3 bg-gray-100">
+            <div class="text-lg">By Sms</div>
+            <div class="flex space-x-4">
+              <div class="flex">
+                <input id="yes" type="radio" name="yesno" value="yes" class="h-4 w-4 border-gray-300 rounded"
+                  onclick="togglePhoneInput(this)" />
+                <label for="yess" class="ml-2 text-sm font-medium text-gray-900">Yes</label>
+              </div>
+              <div class="flex">
+                <input id="no" type="radio" name="yesno" value="no" class="h-4 w-4 border-gray-300 rounded"
+                  onclick="togglePhoneInput(this)" />
+                <label for="no" class="ml-2 text-sm font-medium text-gray-900">No</label>
+              </div>
+            </div>
+          </div>
+
+          <div id="phone-input-container" class="hidden">
+            <label for="phone-input" class="flex justify-between bg-gray-100 text-lg p-4 text-gray-700">Phone Number
+              <input type="number" id="phone-input"
+                class="mt-1 rounded-md w-4/12 text-black p-3 shadow-sm focus:border-y-2 outline-none border-t-red-700 border-b-red-700 sm:text-sm" />
             </label>
-            <label
-              for="town"
-              class="flex justify-between p-3 text-black rounded-md"
-            >
-              Town 0r City
-              <input
-                type="text"
-                name="tow"
-                id="town"
-                class="w-7/12 text-black rounded-md p-3 focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
-              />
-            </label>
-            <label
-              for="postal"
-              class="flex justify-between p-3 text-black rounded-md"
-            >
-              Postalcode
-              <input
-                type="number"
-                name="postal"
-                id="postal"
-                class="w-7/12 text-black rounded-md p-3 focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
-              />
-            </label>
-            <label
-              for="country-select"
-              class="flex justify-between p-3 text-black rounded-md"
-              >Select a country:
-              <select
-                id="country-select"
-                class="w-7/12 text-black rounded-md p-3 focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
-              ></select>
-            </label>
+          </div>
+
+          <div class="flex items-center justify-between p-4 bg-gray-100 mt-5">
+            <div class="text-lg rounded-md">By Post</div>
+            <div class="flex space-x-4">
+              <div class="flex">
+                <input id="yes" type="radio" name="yesno" value="yes"
+                  class="h-4 w-4 rounded focus:border-y-2 outline-none border-t-red-700 border-b-red-700" />
+                <label for="yes" class="ml-2 text-sm font-medium text-gray-900">Yes</label>
+              </div>
+              <div class="flex">
+                <input id="no" type="radio" name="yesno" value="no" class="h-4 w-4 border-gray-300 rounded" />
+                <label for="no"
+                  class="ml-2 text-sm font-medium text-gray-900 focus:border-y-2 outline-none border-t-red-700 border-b-red-700">No</label>
+              </div>
+            </div>
           </div>
         </div>
 
-          <div class="keepInTouch">
-            <h1>Keeping In Touch</h1>
-            <p>
-              We’d love to keep you posted with our news, activities and how you
-              can help in other ways. We’ll never sell or swap your details with
-              anybody else. You are free to change your mind at any time. Please
-              indicate how you would like to hear from us by using the tick
-              boxes below
-            </p>
-
-            <div class="flex items-center justify-between p-4 bg-gray-100 mt-5">
-              <div class="text-lg rounded-md">By Email</div>
-              <div class="flex space-x-4">
-                <div class="flex">
-                  <input
-                    id="yes"
-                    type="radio"
-                    name="yesno"
-                    value="yes"
-                    class="h-4 w-4 rounded focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
-                  />
-                  <label
-                    for="yes"
-                    class="ml-2 text-sm font-medium text-gray-900"
-                    >Yes</label
-                  >
-                </div>
-                <div class="flex">
-                  <input
-                    id="no"
-                    type="radio"
-                    name="yesno"
-                    value="no"
-                    class="h-4 w-4 border-gray-300 rounded"
-                  />
-                  <label
-                    for="no"
-                    class="ml-2 text-sm font-medium text-gray-900 focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
-                    >No</label
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="flex justify-between p-4 mt-3 bg-gray-100">
-              <div class="text-lg">By Phone</div>
-              <div class="flex space-x-4">
-                <div class="flex">
-                  <input
-                    id="yes"
-                    type="radio"
-                    name="yesno"
-                    value="yes"
-                    class="h-4 w-4 border-gray-300 rounded"
-                    onclick="togglePhoneInput(this)"
-                  />
-                  <label
-                    for="yess"
-                    class="ml-2 text-sm font-medium text-gray-900"
-                    >Yes</label
-                  >
-                </div>
-                <div class="flex">
-                  <input
-                    id="no"
-                    type="radio"
-                    name="yesno"
-                    value="no"
-                    class="h-4 w-4 border-gray-300 rounded"
-                    onclick="togglePhoneInput(this)"
-                  />
-                  <label for="no" class="ml-2 text-sm font-medium text-gray-900"
-                    >No</label
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div id="phone-input-container" class="hidden">
-              <label
-                for="phone-input"
-                class="flex justify-between bg-gray-100 text-lg p-4 text-gray-700"
-                >Phone Number
-                <input
-                  type="number"
-                  id="phone-input"
-                  class="mt-1 rounded-md w-4/12 text-black p-3 shadow-sm focus:border-y-2 outline-none border-t-red-700 border-b-red-700 sm:text-sm"
-                />
-              </label>
-            </div>
-            <!-- ////////////////////////// -->
-            <div class="flex justify-between p-4 mt-3 bg-gray-100">
-              <div class="text-lg">By Sms</div>
-              <div class="flex space-x-4">
-                <div class="flex">
-                  <input
-                    id="yes"
-                    type="radio"
-                    name="yesno"
-                    value="yes"
-                    class="h-4 w-4 border-gray-300 rounded"
-                    onclick="togglePhoneInput(this)"
-                  />
-                  <label
-                    for="yess"
-                    class="ml-2 text-sm font-medium text-gray-900"
-                    >Yes</label
-                  >
-                </div>
-                <div class="flex">
-                  <input
-                    id="no"
-                    type="radio"
-                    name="yesno"
-                    value="no"
-                    class="h-4 w-4 border-gray-300 rounded"
-                    onclick="togglePhoneInput(this)"
-                  />
-                  <label for="no" class="ml-2 text-sm font-medium text-gray-900"
-                    >No</label
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div id="phone-input-container" class="hidden">
-              <label
-                for="phone-input"
-                class="flex justify-between bg-gray-100 text-lg p-4 text-gray-700"
-                >Phone Number
-                <input
-                  type="number"
-                  id="phone-input"
-                  class="mt-1 rounded-md w-4/12 text-black p-3 shadow-sm focus:border-y-2 outline-none border-t-red-700 border-b-red-700 sm:text-sm"
-                />
-              </label>
-            </div>
-
-            <div class="flex items-center justify-between p-4 bg-gray-100 mt-5">
-              <div class="text-lg rounded-md">By Post</div>
-              <div class="flex space-x-4">
-                <div class="flex">
-                  <input
-                    id="yes"
-                    type="radio"
-                    name="yesno"
-                    value="yes"
-                    class="h-4 w-4 rounded focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
-                  />
-                  <label
-                    for="yes"
-                    class="ml-2 text-sm font-medium text-gray-900"
-                    >Yes</label
-                  >
-                </div>
-                <div class="flex">
-                  <input
-                    id="no"
-                    type="radio"
-                    name="yesno"
-                    value="no"
-                    class="h-4 w-4 border-gray-300 rounded"
-                  />
-                  <label
-                    for="no"
-                    class="ml-2 text-sm font-medium text-gray-900 focus:border-y-2 outline-none border-t-red-700 border-b-red-700"
-                    >No</label
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ///////////////// -->
+        <div>
           <h1 class="font-bold text-2xl my-5">Your Privacy</h1>
           <p>
             We will always store your personal details securely. We’ll use them
@@ -686,93 +447,93 @@
             you in the way(s) that you have agreed to. Your data may also be
             used for analysis purposes, to help us provide the best service
             possible. For full details see our
-            <a href="#" class="text-red-500 border-b-red-500 hover:border-b-2"
-              >Privacy Policy</a
-            >
+            <a href="#" class="text-red-500 border-b-red-500 hover:border-b-2">Privacy Policy</a>
           </p>
-        </fieldset>
-      </form>
-      <div class="my-4 sm:mx-10">
-        <div class="mb-12">
-          <a
-            href="complete_payment.html"
-            class="donateBtn bg-red-950 text-white rounded-md py-2 px-5 text-lg md:px-9 font-semibold md:text-2xl hover:bg-red-800 trasition duration-500"
-          >
-            Add payment details
-          </a>
         </div>
-
-        <p class="my-4">
-          By submitting this form you are agreeing to our
-          <a
-            href="terms&condition.html"
-            class="text-red-500"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-          >
-            terms and conditions
-          </a>
-        </p>
-        <p>
-          This site is protected by reCAPTCHA and the Google
-          <a
-            href="#"
-            class="text-red-400"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-            >Privacy Policy</a
-          >
-          and
-          <a
-            href="#"
-            class="text-red-500"
-            class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400"
-            >Terms of Service</a
-          >
-          apply.
-        </p>
-      </div>
-    </div>
-
-    <!-- Subscrib for latest news -->
-    <form action="#" class="mt-14 sm:mt-20 p-5 md:px-40 md:mr-48 w-full  bg-gray-100 mx-10">
-      <h1 class=" text-2xl sm:text-3xl capitalize text-gray-400">Subscribe for the latest news</h1>
-      <p class="my-6">Sign up for the latest Nigeria Mosque news. Receive important announcements, regular updates and exclusive content delivered straight to your inbox. (* indicates required field)</p>
-      <div class="flex flex-col gap-4">
-        <label for="firstname" class="flex flex-col gap-1 text-xl">First Name
-          <input type="text" name="firstname" id="firstname" class="border p-2 rounded-md focus:border-y-2 focus:border-t-red-800 focus:border-b-red-800  focus:outline-none">
-        </label>
-        <label for="lastname" class="flex flex-col gap-1 text-xl">Last Name
-          <input type="text" name="lastname" id="lastname" class="border p-2 rounded-md focus:border-y-2 focus:border-t-red-800 focus:border-b-red-800  focus:outline-none">
-        </label>
-        <label for="email" class="flex flex-col gap-1 text-xl">Email Address*
-          <input type="email" name="email" id="email" class="border p-2 rounded-md focus:border-y-2 focus:border-t-red-800 focus:border-b-red-800  focus:outline-none">
-        </label>
-        <div class="py-4">
-          <button class="donateBtn  bg-red-950 text-white text-lg rounded-md py-2 px-7 hover:bg-red-800 transition duration-700">
-           Subscribe
-          </button>
-        </div>
-          <p>By clicking ‘Subscribe’ you agree to your information being processed by the East London Mosque Trust, in accordance with our <a href="#" class="text-red-600 hover:border-b-2 border-red-600">privacy policy.</a></p>
+      </fieldset>
     </form>
-  
-    <!-- Footer -->
-    <div class="footer flex flex-col gap-4 justify-center items-center my-10 w-full">
-      <div class="">
-        <ul class="flex gap-2 sm:gap-5">
-          <li><a href="conatct.html" class="text-lg sm:text-xl hover:border-b-2 border-red-800">Contact Us</a></li>
-          <li><a href="terms&condition.html" class="text-lg m:text-xl hover:border-b-2 border-red-800">Terms & Condition</a></li>
-          <li><a href="privacy.html" class="text-lg sm:text-xl hover:border-b-2 border-red-800">Privacy & policy</a></li>
-          <li><a href="login.html"class="text-lg sm:text-xl hover:border-b-2 border-red-800">Login</a></li>
-        </ul>
-      </div>
-      <p> The East London Mosque Trust is a charity (1122613) and a company limited by guarantee (468317) registered in England & Wales.</p>
-    
-      
     </div>
+    <div class="w-full px-5 md:w-7/12 mx-auto pb-12 md:pb-20">
+      <div class="mb-12">
+        <a href="complete_payment.html"
+          class="donateBtn bg-red-950 text-white rounded-md py-2 px-5 text-lg md:px-9 font-semibold md:text-2xl hover:bg-red-800 trasition duration-500">
+          Add payment details
+        </a>
+      </div>
+
+      <p class="my-4">
+        By submitting this form you are agreeing to our
+        <a href="terms&condition.html" class="text-red-500"
+          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">
+          terms and conditions
+        </a>
+      </p>
+      <p>
+        This site is protected by reCAPTCHA and the Google
+        <a href="#" class="text-red-400"
+          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Privacy Policy</a>
+        and
+        <a href="#" class="text-red-500"
+          class="hover:border-red-700 hover:border-b-2 border-b-red-800 transition-all duration-400">Terms of
+          Service</a>
+        apply.
+      </p>
+    </div>
+  </div>
+
+  <!-- Subscrib for latest news -->
+  <form action="#" class="py-12 md:py-20 px-5 md:px-40 md:mr-48 w-full  bg-gray-100">
+    <h1 class=" text-2xl sm:text-3xl capitalize text-gray-400">Subscribe for the latest news</h1>
+    <p class="my-6">Sign up for the latest Nigeria Mosque news. Receive important announcements, regular updates and
+      exclusive content delivered straight to your inbox. (* indicates required field)</p>
+    <div class="flex flex-col gap-3">
+      <label for="firstname" class="flex flex-col gap-1 text-lg">First Name
+        <input type="text" name="firstname" id="firstname"
+          class="border p-2 rounded-md focus:border-y-2 focus:border-t-red-800 focus:border-b-red-800  focus:outline-none">
+      </label>
+      <label for="lastname" class="flex flex-col gap-1 text-lg">Last Name
+        <input type="text" name="lastname" id="lastname"
+          class="border p-2 rounded-md focus:border-y-2 focus:border-t-red-800 focus:border-b-red-800  focus:outline-none">
+      </label>
+      <label for="email" class="flex flex-col gap-1 text-lg">Email Address*
+        <input type="email" name="email" id="email"
+          class="border p-2 rounded-md focus:border-y-2 focus:border-t-red-800 focus:border-b-red-800  focus:outline-none">
+      </label>
+      <div class="py-7">
+        <button
+          class="donateBtn  bg-red-950 text-white text-lg rounded-md py-2 px-7 hover:bg-red-800 transition duration-700">
+          Subscribe
+        </button>
+      </div>
+      <p class="text-sm text-gray-500">By clicking ‘Subscribe’ you agree to your information being processed by the East
+        London Mosque Trust, in
+        accordance with our <a href="#" class="text-red-600 hover:border-b-2 border-red-600">privacy policy.</a></p>
+    </div>
+  </form>
+
+  <!-- Footer -->
+  <div class="footer flex flex-col gap-4 justify-center items-center my-10 px-5 text-center text-gray-500">
+    <div class="">
+      <ul class="flex gap-5 text-sm">
+        <li><a href="conatct.html" class="text-sm hover:border-b-2 border-red-800">Contact Us</a></li>
+        <li><a href="terms&condition.html" class=" hover:border-b-2 border-red-800">Terms & Condition</a></li>
+        <li><a href="privacy.html" class="hover:border-b-2 border-red-800">Privacy & policy</a></li>
+        <li><a href="login.html" class="hover:border-b-2 border-red-800">Login</a></li>
+      </ul>
+    </div>
+    <p class="text-sm"> The East London Mosque Trust is a charity (1122613) and a company limited by guarantee
+      (468317) registered in
+      England & Wales.</p>
 
 
-<script>
+  </div>
 
-</script>
 
-  </body>
+
+  <script>
+
+  </script>
+
+</body>
+
 </html>
