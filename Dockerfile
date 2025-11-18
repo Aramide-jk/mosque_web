@@ -2,16 +2,12 @@ FROM public.ecr.aws/nginx/nginx:latest
 
 LABEL maintainer="Mosqueweb"
 
-# Copy all HTML pages
 COPY *.html /usr/share/nginx/html/
 
-# Copy CSS folder
-COPY css/ /usr/share/nginx/html/css/
+COPY style.css/ /usr/share/nginx/html/html/
 
-# Copy JS folder
-COPY src/ /usr/share/nginx/html/js/
+COPY src/ /usr/share/nginx/html/src/
 
-# Copy Images folder
 COPY img-src/ /usr/share/nginx/html/img-src/
 
 EXPOSE 80
