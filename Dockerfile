@@ -9,10 +9,10 @@ COPY *.html /usr/share/nginx/html/
 COPY css/ /usr/share/nginx/html/css/
 
 # Copy JS folder
-COPY js/ /usr/share/nginx/html/js/
+COPY src/ /usr/share/nginx/html/js/
 
 # Copy Images folder
-COPY images/ /usr/share/nginx/html/images/
+COPY img-src/ /usr/share/nginx/html/img-src/
 
 EXPOSE 80
 
