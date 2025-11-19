@@ -1,1 +1,1 @@
-[{"name":"mosquepipeline","imageUri":"734649603753.dkr.ecr.us-east-1.amazonaws.com/mosquepipeline:2c8dcd2"}]
+[{"name":"mosque-build","imageUri":"734649603753.dkr.ecr.us-east-1.amazonaws.com/mosque-build:05d7e8d"}]
